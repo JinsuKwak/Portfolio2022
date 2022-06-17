@@ -83,3 +83,80 @@
   font-size: 15rem;
   line-height: 14.6rem;
 }
+
+/**************************/
+/* Section aboutme */
+/**************************/
+.section-aboutme {
+  background-color: #393e46;
+}
+
+.aboutme {
+  color: #222;
+}
+
+.aboutme-grid {
+  grid-column: 1/5;
+  background-color: #fcf7f8;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.aboutme-me {
+  grid-column: 1/2;
+}
+
+.aboutme-info {
+  grid-column: 2/5;
+  padding: 2rem;
+}
+
+.aboutme-links {
+  grid-column: 5/6;
+  background-color: #fcf7f8;
+  border-radius: 1rem;
+  padding: 9.6rem 2rem 9.6rem 2rem;
+  row-gap: 2rem;
+}
+
+.aboutme-links a {
+  width: 17rem;
+  text-align: center;
+  justify-self: center;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.aboutme-links a:nth-child(odd):link,
+.aboutme-links a:nth-child(odd):visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #00adb5;
+  transition: all 0.3s;
+}
+
+.aboutme-links a:nth-child(odd):hover,
+.aboutme-links a:nth-child(odd):active {
+  color: #fff;
+  background-color: #c33c54;
+}
+
+.aboutme-links a:nth-child(even):link,
+.aboutme-links a:nth-child(even):visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #393e46;
+  transition: all 0.3s;
+}
+
+.aboutme-links a:nth-child(even):hover,
+.aboutme-links a:nth-child(even):active {
+  color: #fff;
+  background-color: #c33c54;
+}
