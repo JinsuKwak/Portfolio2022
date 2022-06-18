@@ -302,3 +302,97 @@
   height: 2rem;
   border-radius: 6px;
 }
+
+/**************************/
+/* Section education */
+/**************************/
+
+/* structure */
+.section-education {
+  background-color: #fcf7f8;
+  color: #222;
+}
+
+.education {
+  row-gap: 9.6rem;
+  grid-template-rows: 6rem 1fr 1fr 1fr;
+}
+
+.education-info {
+  grid-row: 1/2;
+  justify-self: center;
+  height: inherit;
+}
+
+.education-info h2 {
+  text-align: center;
+  color: #c33c54;
+  font-size: 3.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.education-info h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.education-years {
+  height: 42rem;
+  grid-row: 2/5;
+  justify-content: center;
+}
+
+.education-years .year-1 {
+  grid-column: 1/2;
+}
+.education-years .year-2 {
+  grid-column: 2/3;
+}
+.education-years .year-3 {
+  grid-column: 3/4;
+}
+.education-years .year-4 {
+  grid-column: 4/5;
+}
+.education-years .year-5 {
+  grid-column: 5/6;
+}
+
+/* inner */
+.education-year {
+  /* box-shadow: 0 0 0 0.5rem #00adb5 inset; */
+  border: 0.5rem solid #00adb5;
+  box-sizing: border-box;
+  border-radius: 9px;
+  padding: 8rem 2rem 8rem 2rem;
+  row-gap: 2rem;
+  width: 21rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.education-year:hover {
+  transform: translateY(-1.2rem);
+  border: 0.5rem solid #c33c54;
+  box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4);
+  /* box-shadow: 0 0 0 0.5rem #c33c54 inset; */
+}
+
+.ed-yearnum {
+  font-size: 3rem;
+  font-weight: 600;
+  height: fit-content;
+  justify-self: center;
+  align-self: end;
+}
+
+.ed-year {
+  height: fit-content;
+  justify-self: center;
+  align-self: start;
+  margin-bottom: auto;
+}
+
+.current-year {
+  /* box-shadow: 0 0 0 0.5rem #7ae7c7 inset; */
+}
