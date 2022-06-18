@@ -20,6 +20,10 @@ h2 {
   font-size: 3.6rem !important;
 }
 
+textarea {
+  resize: none;
+}
+
 /**************************/
 /* GENRAL REUSABLE COMPONENTS */
 /**************************/
