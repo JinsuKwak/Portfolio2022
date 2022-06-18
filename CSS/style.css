@@ -160,3 +160,145 @@
   color: #fff;
   background-color: #c33c54;
 }
+
+/**************************/
+/* Section skills */
+/**************************/
+.section-skills {
+  background-color: #393e46;
+}
+
+.skills-techskills {
+  grid-template-rows: 6rem auto;
+  row-gap: 2rem;
+  grid-column: 1/5;
+}
+
+.skills-techskills--levels {
+  box-shadow: 0 0 0 0.5rem #00adb5 inset;
+  border-radius: 9px;
+  grid-row: 1/2;
+  column-gap: 4rem;
+  row-gap: 0;
+  height: 6rem;
+  padding: 1rem;
+}
+
+.skills-techskills--levels .skills-level {
+  justify-self: start;
+}
+
+.skills-techskills-levels-name {
+  grid-column: 1/2;
+  width: 14rem;
+  justify-self: end;
+  align-self: center;
+}
+
+.skills-level {
+  grid-column: 2/3;
+  column-gap: 0;
+  row-gap: 0;
+  justify-self: center;
+  align-self: center;
+}
+
+.skills-level div {
+  display: block;
+  justify-self: center;
+  align-self: center;
+  border: 0.2rem solid #fff;
+  padding: 0 2rem;
+  height: 1.8rem;
+  width: 3.6em;
+}
+
+.skill-level--1 {
+  grid-column: 1/2;
+  border-radius: 10rem 0 0 10rem;
+}
+.skill-level--2 {
+  grid-column: 2/3;
+}
+.skill-level--3 {
+  grid-column: 3/4;
+}
+.skill-level--4 {
+  grid-column: 4/5;
+}
+.skill-level--5 {
+  grid-column: 5/6;
+  border-radius: 0 10rem 10rem 0;
+}
+
+.skills-techskills--myskills {
+  font-size: 1.6rem;
+  box-shadow: 0 0 0 0.5rem #00adb5 inset;
+  border-radius: 9px;
+  column-gap: 4rem;
+  row-gap: 5rem;
+  padding: 8rem 4rem;
+}
+
+.skills-techskill-item ion-icon {
+  grid-column: 1/2;
+}
+
+.skills-techskill-item p {
+  grid-column: 2/3;
+  width: 14rem;
+  justify-self: center;
+  align-self: center;
+  grid-column: 1/2;
+  text-align: center;
+
+  padding: 0.8rem;
+  background-color: #fff;
+  color: #222;
+  border-radius: 10rem;
+}
+
+.skills-techskill-item .skills-level {
+  grid-column: 2/5;
+}
+
+.skills-techskill-item .skills-level div {
+  border: 0.2rem solid #fff;
+  padding: 0 2rem;
+  height: 3.2rem;
+  width: 9.6rem;
+}
+
+/* mytools */
+
+.skills-toollist {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skills-mytools {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 0 0.5rem #00adb5 inset;
+  border-radius: 9px;
+  font-size: 1.4rem;
+  padding: 10rem 2rem;
+}
+
+.skills-toollist-item {
+  justify-self: center;
+  padding: 0.5rem;
+  height: 2rem;
+
+  transition: all 0.3s;
+}
+
+.skills-toollist-item:hover {
+  justify-self: center;
+  color: #fff;
+  background-color: #c33c54;
+  padding: 0.5rem;
+  height: 2rem;
+  border-radius: 6px;
+}
