@@ -140,3 +140,50 @@ h2 {
 .main-nav ul li.current a {
   color: #fff;
 }
+
+/**************************/
+/*          Skills        */
+/**************************/
+
+.Skill {
+  grid-template-columns: 1.2rem 1fr;
+  font-size: 1.2rem;
+  background-color: #fff;
+  color: #393e46;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  column-gap: 0.5rem;
+  border-radius: 100rem;
+  justify-self: start;
+  align-self: center;
+  min-width: 5rem;
+}
+
+ion-icon {
+  justify-self: center;
+  align-self: center;
+}
+
+.skill ion-icon {
+  grid-column: 1/2;
+}
+.Java ion-icon {
+  color: #f08c00;
+}
+.Python ion-icon {
+  color: #1c7ed6;
+}
+.C ion-icon {
+  color: #20c997;
+}
+.Cpp ion-icon {
+  color: #099268;
+}
+.HTML ion-icon {
+  color: #f03e3e;
+}
+.CSS ion-icon {
+  color: #7950f2;
+}
+.JavaScript ion-icon {
+  color: #fcc419;
+}
