@@ -22,8 +22,8 @@
 .intro-gradient {
   background: linear-gradient(
     to bottom,
-    rgba(55, 55, 55, 0.7),
-    rgba(55, 55, 55, 0.7)
+    rgba(57, 62, 70, 0.1),
+    rgba(57, 62, 70, 0.8)
   );
   z-index: -999;
 }
@@ -418,8 +418,6 @@
 
 /* structure */
 .section-portfolio {
-  background-color: #fcf7f8;
-  color: #393e46;
   padding-bottom: 13rem;
 }
 
@@ -479,7 +477,6 @@
   transform: translateY(-1.2rem);
   border: 0.5rem solid #cc3c54;
   box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4);
-  /* box-shadow: 0 0 0 0.5rem #cc3c54  inset; */
 }
 
 /*inner intro*/
@@ -753,7 +750,6 @@
 #contact-name:focus {
   outline: none;
   box-shadow: 0 0 0 0.4rem rgba(0, 172, 181, 0.8);
-  /* box-shadow: 0 0 0 0.4rem rgba(195, 60, 85, 0.8); */
 }
 
 .btn-contact--send {
@@ -788,8 +784,9 @@
 
 /*  additional color adjustments */
 
+.section-portfolio,
 .section-skills {
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-color: #eee;
 }
 
 .skills-techskills--levels,
@@ -802,5 +799,32 @@
 }
 
 .skills-techskills--levels {
+  background-color: #00adb5;
+  transition: all 0.3s;
+}
+
+.skills-techskills--levels:hover {
   background-color: #cc3c54;
+}
+
+.section-portfolio {
+  color: #393e46;
+}
+
+.section-education {
+  background-color: #fcf7f8;
+}
+
+.education-year {
+  /* background-color: #fcf7f8; */
+}
+
+.project-intro:hover,
+.project-skills:hover {
+  transform: translateY(-1.2rem);
+  color: #fff;
+  background-image: linear-gradient(120deg, #f77062 0%, #fe5196 100%);
+  border: none;
+  box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4);
+  /* box-shadow: 0 0 0 0.5rem #cc3c54  inset; */
 }

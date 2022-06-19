@@ -155,6 +155,7 @@ textarea {
   font-size: 1.2rem;
   background-color: #fff;
   color: #393e46;
+
   padding: 0.5rem 1rem 0.5rem 0.5rem;
   column-gap: 0.5rem;
   border-radius: 100rem;
@@ -184,6 +185,7 @@ ion-icon {
 .Cpp ion-icon {
   color: #099268;
 }
+.HTMLCSS ion-icon,
 .HTML ion-icon {
   color: #f03e3e;
 }
