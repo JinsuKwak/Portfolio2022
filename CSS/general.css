@@ -36,6 +36,12 @@ textarea {
   margin: 0 auto;
 }
 
+.hide {
+  display: none;
+  pointer-events: none;
+  visibility: none;
+}
+
 .margin-top--L {
   margin-top: 9.6rem;
 }

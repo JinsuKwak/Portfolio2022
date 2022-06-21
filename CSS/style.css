@@ -220,6 +220,32 @@
   background-color: #cc3c54;
 }
 
+.aboutme-logo:nth-child(odd) {
+  padding: 1.2rem 1.2rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #00adb5;
+  transition: all 0.3s;
+}
+
+.aboutme-logo:nth-child(odd):hover {
+  color: #fff;
+  background-color: #cc3c54;
+}
+
+.aboutme-logo:nth-child(even) {
+  padding: 1.2rem 1.2rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #393e46;
+  transition: all 0.3s;
+}
+
+.aboutme-logo:nth-child(even):hover {
+  color: #fff;
+  background-color: #cc3c54;
+}
+
 /**************************/
 /* Section skills */
 /**************************/
@@ -471,6 +497,73 @@
   /* box-shadow: 0 0 0 0.5rem #7ae7c7 inset; */
 }
 
+/* education years - mobile */
+.ed-yearnum--mobile {
+  cursor: pointer;
+}
+
+.ed-yearnum--mobile ion-icon {
+  font-size: 2rem;
+}
+
+.education-year--mobile {
+  justify-content: center;
+  grid-row: 2/5;
+  /* height: 20rem; */
+  row-gap: 1.5rem;
+}
+
+.ed-yearnum--mobile {
+  border-bottom: solid 0.5rem #00adb5;
+  /* box-shadow: 0 -0.5rem 0 0rem #00adb5 inset; */
+  width: 46rem;
+  height: 5rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.ed-yearnum--mobile:hover {
+  border-bottom: solid 0.5rem #cc3c54;
+}
+
+.pinkborder {
+  border-bottom: solid 0.5rem #cc3c54;
+}
+
+.ed-yearnum--mobile :nth-child(1) {
+  align-self: center;
+  justify-self: start;
+}
+
+.ed-yearnum--mobile :nth-child(2) {
+  align-self: center;
+  justify-self: center;
+}
+
+.ed-yearnum--mobile ion-icon {
+  align-self: center;
+  justify-self: end;
+}
+
+.ed-yearnum--mobile-shadow {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.course--mobile {
+  font-size: 1.4rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.ed-year-courses--mobile li {
+  padding: 0.3rem;
+  border-bottom: 0.1rem solid #222;
+}
+
+.ed-year-courses--mobile li:nth-child(1) {
+  padding: 0.5rem 0.3rem 0.3rem 0.5rem;
+  border-bottom: 0.1rem solid #222;
+}
 /**************************/
 /* Section portfolio */
 /**************************/

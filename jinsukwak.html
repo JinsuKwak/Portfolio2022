@@ -23,6 +23,8 @@
     <title>Jinsu Kwak</title>
   </head>
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <section class="section-intro">
       <div class="top-decoration"></div>
       <div class="intro-grid">
@@ -36,19 +38,19 @@
           <nav class="main-nav">
             <ul class="clearfix">
               <li class="">
-                <a class="nav" href="#aboutme"><span>About me</span></a>
+                <a class="nav" href="#aboutme"><span>About</span>me</a>
               </li>
               <li>
-                <a class="nav" href="#skills"><span>Skills</span></a>
+                <a class="nav" href="#skills">Ski<span>lls</span></a>
               </li>
               <li>
-                <a class="nav" href="#education"><span>Education</span></a>
+                <a class="nav" href="#education">Edu<span>cation</span></a>
               </li>
               <li>
-                <a class="nav" href="#portfolio"><span>Portfolio</span></a>
+                <a class="nav" href="#portfolio">Por<span>tfolio</span></a>
               </li>
               <li>
-                <a class="nav" href="#contact"><span>Contact</span></a>
+                <a class="nav" href="#contact">Con<span>tact</span></a>
               </li>
             </ul>
           </nav>
@@ -95,9 +97,17 @@
           </div>
           <div class="aboutme-links grid-row grid--4-rows">
             <a class="aboutme-links--github" href="#">GitHub</a>
+            <div style="display: none"></div>
+            <ion-icon class="aboutme-logo" name="logo-github" style="display: none"></ion-icon>
             <a class="aboutme-links--linkedin" href="#">LinkedIn</a>
+            <div style="display: none"></div>
+            <ion-icon class="aboutme-logo" name="logo-linkedin" style="display: none"></ion-icon>
             <a class="aboutme-links--resume" href="#">Resume</a>
+            <div style="display: none"></div>
+            <ion-icon class="aboutme-logo" name="document-text-outline" style="display: none"></ion-icon>
             <a class="aboutme-links--instagram" href="#">Instagram</a>
+            <div style="display: none"></div>
+            <ion-icon class="aboutme-logo" name="logo-instagram" style="display: none"></ion-icon>
           </div>
         </div>
       </div>
@@ -239,6 +249,229 @@
             <div class="education-year year-5 grid-row grid--2-rows">
               <h4 class="ed-yearnum">Year 5</h4>
               <h5 class="ed-year">2024~2025</h5>
+            </div>
+          </div>
+          <div
+            class="education-year--mobile grid-row grid--5rows"
+            style="display: none"
+          >
+            <div class="eduyear-mobile">
+              <div
+                class="ed-yearnum--mobile ed-year-1--mobile grid-col grid--3-cols ed-yearnum--mobile-shadow"
+              >
+                <p>Year 1</p>
+                <p>2020 - 2021</p>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+              <ul class="ed-year-courses--mobile hide">
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">Fall</p>
+                  <p class="course--mobile">Winter</p>
+                  <p class="course--mobile">Spring</p>
+                  <p class="course--mobile">Summer</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">ENGG - 233</p>
+                  <p class="course--mobile">ENGG - 200</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">ECON - 201</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">ENGG - 225</p>
+                  <p class="course--mobile">ENGG - 202</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">ENGG - 201</p>
+                  <p class="course--mobile">MATH - 277</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">MATH - 275</p>
+                  <p class="course--mobile">PHYS - 259</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">MATH - 211</p>
+                  <p class="course--mobile">CHEM - 209</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+              </ul>
+            </div>
+            <div class="eduyear-mobile">
+              <div
+                class="ed-yearnum--mobile ed-year-1--mobile grid-col grid--3-cols ed-yearnum--mobile-shadow"
+              >
+                <p>Year 2</p>
+                <p>2021 - 2022</p>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+              <ul class="ed-year-courses--mobile hide">
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">Fall</p>
+                  <p class="course--mobile">Winter</p>
+                  <p class="course--mobile">Spring</p>
+                  <p class="course--mobile">Summer</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">ENSF - 337</p>
+                  <p class="course--mobile">ENSF - 409</p>
+                  <p class="course--mobile">PSYC - 200</p>
+                  <p class="course--mobile">ECON - 209</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">ENEL - 353</p>
+                  <p class="course--mobile">ENCM - 369</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">ENDG - 319</p>
+                  <p class="course--mobile">ENEL - 327</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">MATH - 375</p>
+                  <p class="course--mobile">CPSC - 319</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">PHYS - 369</p>
+                  <p class="course--mobile">MATH - 271</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+              </ul>
+            </div>
+            <div class="eduyear-mobile">
+              <div
+                class="ed-yearnum--mobile ed-year-1--mobile grid-col grid--3-cols ed-yearnum--mobile-shadow"
+              >
+                <p>Year 3</p>
+                <p>2022 - 2023</p>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+              <ul class="ed-year-courses--mobile hide">
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">Fall</p>
+                  <p class="course--mobile">Winter</p>
+                  <p class="course--mobile">Spring</p>
+                  <p class="course--mobile">Summer</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">ENSF - 480</p>
+                  <p class="course--mobile">SENG - 401</p>
+                  <p class="course--mobile">INTERN</p>
+                  <p class="course--mobile">INTERN</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">ENCM - 511</p>
+                  <p class="course--mobile">SENG - 471</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">CPSC - 471</p>
+                  <p class="course--mobile">SENG - 438</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">CPSC - 441</p>
+                  <p class="course--mobile">CPSC - 457</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+              </ul>
+            </div>
+            <div class="eduyear-mobile">
+              <div
+                class="ed-yearnum--mobile ed-year-1--mobile grid-col grid--3-cols ed-yearnum--mobile-shadow"
+              >
+                <p>Year 4</p>
+                <p>2023 - 2024</p>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+              <ul class="ed-year-courses--mobile hide">
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">Fall</p>
+                  <p class="course--mobile">Winter</p>
+                  <p class="course--mobile">Sprin</p>
+                  <p class="course--mobile">Summer</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">INTERN</p>
+                  <p class="course--mobile">INTERN</p>
+                  <p class="course--mobile">INTERN</p>
+                  <p class="course--mobile">INTERN</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+              </ul>
+            </div>
+            <div class="eduyear-mobile">
+              <div
+                class="ed-yearnum--mobile ed-year-1--mobile grid-col grid--3-cols ed-yearnum--mobile-shadow"
+              >
+                <p>Year 5</p>
+                <p>2024 - 2025</p>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+              <ul class="ed-year-courses--mobile hide">
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">Fall</p>
+                  <p class="course--mobile">Winter</p>
+                  <p class="course--mobile">Spring</p>
+                  <p class="course--mobile">Summer</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                <li class="course-row--mobile grid-col grid--4-cols">
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                  <p class="course--mobile">&nbsp;</p>
+                </li>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -472,6 +705,7 @@
     </section>
 
     <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="JS/script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
