@@ -74,7 +74,6 @@
   grid-row: 3/4;
 }
 
-
 .intro-me {
   display: inline-block;
   align-self: center;
@@ -109,8 +108,73 @@
   border-radius: 1rem;
   padding: 2rem;
 }
+
 .aboutme-me {
   grid-column: 1/2;
+  grid-template-rows: 24rem 6rem;
+  align-content: center;
+  align-self: start;
+  row-gap: 2rem;
+  justify-self: center;
+}
+
+.aboutme-me--me {
+  height: 24rem;
+  width: 18rem;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #999;
+}
+
+.aboutme-me--contact {
+  padding: 0rem 1rem;
+  row-gap: 1rem;
+}
+
+.aboutme-me--contact-cell,
+.aboutme-me--contact-email {
+  grid-template-columns: 1.4rem auto;
+  justify-content: start;
+  align-self: center;
+  column-gap: 1rem;
+}
+
+.aboutme-me--contact-cell:hover,
+.aboutme-me--contact-email:hover {
+  color: #cc3c54 !important;
+}
+
+.aboutme-me--contact-cell ion-icon,
+.aboutme-me--contact-email ion-icon {
+  justify-self: center;
+  align-self: center;
+  color: #222;
+  width: 1.6rem;
+}
+
+.aboutme-me--contact-cell ion-icon:hover,
+.aboutme-me--contact-email ion-icon:hover {
+  color: #cc3c54;
+}
+
+.email,
+.tel {
+  align-self: center;
+}
+.email:link,
+.tel:link,
+.email:visited,
+.tel:visited {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #222;
+}
+
+.email:hover,
+.tel:hover,
+.email:active,
+.tel:active {
+  color: #cc3c54;
 }
 
 .aboutme-info {
