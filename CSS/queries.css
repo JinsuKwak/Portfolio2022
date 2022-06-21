@@ -1,0 +1,193 @@
+/**************************/
+/*      below 1200px      */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%px;
+  }
+  .background {
+    max-width: 120rem;
+  }
+
+  /* intro */
+  .intro-me {
+    font-size: 10rem;
+  }
+
+  /* aboutme */
+
+  .section-aboutme {
+    display: flex;
+    justify-content: center;
+  }
+  .section-aboutme .container {
+    width: 970rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutme {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 2rem;
+    width: 70rem;
+  }
+
+  .aboutme-links {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    padding: 3rem 20rem;
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+
+  .aboutme-links a {
+    font-size: 1.4rem;
+    width: 15rem;
+    padding: 1rem;
+  }
+
+  /* skills */
+  .section-skills {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-skills .container {
+    display: flex;
+    justify-content: center;
+    width: 970rem;
+  }
+
+  .skills {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 1rem;
+    width: 70rem;
+  }
+
+  .skills-mytools {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .skills-toollist li {
+    list-style-type: none;
+  }
+
+  /* education */
+
+  .section-education {
+    display: flex;
+    justify-content: center;
+  }
+  .section-education .container {
+    width: 970rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-education {
+    padding-bottom: 0;
+  }
+
+  .education-year {
+    width: 15rem;
+    height: 30rem;
+  }
+
+  .ed-yearnum {
+    font-size: 2.4rem;
+  }
+
+  .ed-year {
+    font-size: 1.2rem;
+  }
+
+  /* portfolio */
+
+  .section-portfolio {
+    display: flex;
+    justify-content: center;
+  }
+  .section-portfolio .container {
+    width: 970rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio-projects {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 4rem;
+    height: 84rem;
+  }
+
+  .project-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: end;
+  }
+  .project-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: start;
+  }
+  .project-3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: end;
+  }
+  .project-4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: start;
+  }
+
+  .btn-project--next {
+    right: 0;
+    top: 50%;
+    transform: translate(200%, 0%);
+  }
+
+  .btn-project--prev {
+    left: 0;
+    top: 50%;
+    transform: translate(-200%, 0%);
+  }
+  .pageID-project {
+    transform: translate(-50%, 500%);
+  }
+
+  /* contact */
+
+  .section-contact {
+    display: flex;
+    justify-content: center;
+  }
+  .section-contact .container {
+    width: 970rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact {
+    width: 70rem;
+  }
+
+  .contact .contact-head h2 {
+    width: 55rem;
+  }
+
+  .contact-text,
+  .contact-head,
+  .contact form {
+    width: 55rem;
+    justify-self: center;
+  }
+}
