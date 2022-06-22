@@ -505,3 +505,20 @@
     align-self: end;
   }
 }
+
+/**************************/
+/*      below 512px      */
+/**************************/
+@media (max-width: 32em) {
+  html {
+    font-size: 46%;
+  }
+
+  .btn-project--next {
+    display: none;
+  }
+
+  .btn-project--prev {
+    display: none;
+  }
+}
