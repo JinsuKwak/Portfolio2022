@@ -1,3 +1,25 @@
+/* Smooth scrolling animatoin */
+const allLinks = document.querySelectorAll("a:link");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+
+/* Education animation  (mobile) */
 $(document).ready(function () {
   $(".eduyear-mobile>.ed-yearnum--mobile").click(function () {
     $(this).next("ul").toggleClass("hide");
