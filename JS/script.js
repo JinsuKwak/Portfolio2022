@@ -4,7 +4,6 @@ const topDecoEl = document.querySelector(".sticky-wrapper");
 let topWrapper = (topDecoEl.clientHeight + convertRemToPixels(1)) * -1;
 window.onresize = function (e) {
   topWrapper = (topDecoEl.clientHeight + convertRemToPixels(1)) * -1;
-  console.log(topWrapper);
 };
 
 const sectionIntroEl = document.querySelector(".section-intro");
@@ -46,7 +45,6 @@ allLinks.forEach(function (link) {
       sectionEl.scrollIntoView({
         behavior: "smooth",
       });
-      console.log(topWrapper);
     }
   });
 });
@@ -54,7 +52,6 @@ allLinks.forEach(function (link) {
 /* section indicator */
 const sectionEl = document.querySelectorAll("section");
 const currentEl = document.querySelectorAll(".main-nav ul li");
-console.log(currentEl);
 const obss = [5];
 
 function sectionIndicator() {
@@ -63,20 +60,20 @@ function sectionIndicator() {
       function (entries) {
         const ent = entries[0];
         console.log(currentEl[i]);
+
+        if (ent.isIntersecting && i == 4) {
+          document.querySelector(".section-contact").classList.add("fill");
+          if (!ent.isIntersecting && i == 4) {
+            document.querySelector(".section-contact").classList.remove("fill");
+          }
+        }
+
         if (!ent.isIntersecting) {
           currentEl[i].classList.remove("current");
         }
 
         if (ent.isIntersecting) {
           currentEl[i].classList.add("current");
-        }
-
-        if (!ent.isIntersecting && i == 4) {
-          document.querySelector(".section-contact").classList.remove("fill");
-        }
-
-        if (ent.isIntersecting && i == 4) {
-          document.querySelector(".section-contact").classList.add("fill");
         }
       },
       {

@@ -828,6 +828,7 @@
 
 .contact {
   grid-template-rows: 6.4rem 4rem 1fr;
+  height: 62rem;
 }
 
 .contact .contact-head {
@@ -857,6 +858,7 @@
 }
 
 .contact-text {
+  height: 4rem !important;
   grid-row: 2/3;
   justify-self: center;
   height: inherit;
