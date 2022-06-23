@@ -10,7 +10,7 @@
   left: 0;
   display: block;
   width: 100vw;
-  height: 10px;
+  height: 1rem;
   background: #00adb5;
 }
 
@@ -822,6 +822,7 @@
   background-color: #393e46;
   /* height: 93vh; */
   min-height: 82rem;
+  padding-top: 15.6rem;
   padding-bottom: 20vh;
 }
 

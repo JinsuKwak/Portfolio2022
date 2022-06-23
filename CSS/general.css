@@ -117,6 +117,17 @@ textarea {
   grid-row: 4/5;
 }
 
+.is-sticky {
+  padding-top: 1rem;
+  position: fixed;
+  display: inline;
+  z-index: 1000;
+}
+
+.fill {
+  height: 100vh;
+}
+
 .main-nav {
   width: 100vw;
   height: 5rem;
@@ -124,23 +135,23 @@ textarea {
   position: absolute;
   margin: 0 auto;
 }
-.nav-sticky-wrapper.is-sticky .main-nav {
-  background-color: #0d2c5a;
+
+.sticky-wrapper.is-sticky .main-nav {
+  background-color: #2e3238;
 }
+
 .main-nav ul {
   margin: 0 auto;
   padding: 0;
   list-style: none;
   display: inline-block;
-  *display: inline;
+  display: inline;
 }
 .main-nav ul li {
   padding: 0 1rem;
   line-height: 5rem;
   display: inline-block;
-  float: left;
   text-transform: uppercase;
-  margin-bottom: 3rem;
 }
 
 .main-nav ul li a {
