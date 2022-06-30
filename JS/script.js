@@ -213,7 +213,7 @@ const year2 = {
       ["PSYC - 200", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
       [
         ["SPRING - 2022"],
-        ["Principles of Psychology I", "B+"],
+        ["Principles of Psychology I", "Grade: B+"],
         ["&nbsp", "&nbsp"],
         ["&nbsp", "&nbsp"],
         ["&nbsp", "&nbsp"],

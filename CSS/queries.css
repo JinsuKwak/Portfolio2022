@@ -78,10 +78,15 @@
     justify-content: center;
   }
 
+  .education-year {
+    border-width: 0.4rem !important;
+  }
+
   .section-education {
     padding-bottom: 0;
   }
-
+  .education-course,
+  .education-term,
   .education-year {
     width: 15rem;
     height: 30rem;
@@ -93,6 +98,63 @@
 
   .ed-year {
     font-size: 1.2rem;
+  }
+
+  .education-descriptions,
+  .education-course,
+  .education-term {
+    grid-template-rows: 5rem 23rem;
+  }
+  .ed-courses--year,
+  .course-name {
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    border-width: 0.4rem !important;
+  }
+
+  .ed-courses,
+  .course-courses {
+    width: 15rem;
+    height: 23rem;
+  }
+
+  .ed-course,
+  .course {
+    padding: 0.5rem 1rem;
+    width: 15rem;
+    height: 3.8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-width: 0.4rem !important;
+  }
+
+  .ed-courses--year {
+    font-size: 1.8rem;
+  }
+
+  .ed-course {
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+  }
+  .education-description--term {
+    height: 5rem;
+    width: 66rem;
+    font-size: 1.8rem;
+    border-width: 0.4rem !important;
+  }
+  .course-descriptions--courses {
+    height: 23rem;
+    width: 66rem;
+    font-size: 1.4rem;
+  }
+  .ed-description {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    grid-template-columns: 53rem 7rem;
+    height: 3.8rem;
+    width: 66rem;
+    border-width: 0.4rem !important;
   }
 
   /* portfolio */
