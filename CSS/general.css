@@ -42,6 +42,53 @@ textarea {
   visibility: none;
 }
 
+.hidden {
+  display: none !important;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.appear {
+  animation: fade-in 1s;
+  animation-fill-mode: forwards;
+  display: grid;
+  pointer-events: auto;
+}
+
+.disappear {
+  animation: fade-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.education-years .selected {
+  transform: translateY(-1.2rem);
+  transition: all 0.3s !important;
+  border: 0.5rem solid #cc3c54;
+  box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4);
+  box-sizing: border-box;
+  border-radius: 9px;
+  grid-column: 1/2 !important;
+  grid-row: 1/2 !important;
+}
+
 .margin-top--L {
   margin-top: 9.6rem;
 }

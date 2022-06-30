@@ -437,36 +437,45 @@
   font-size: 2rem;
 }
 
+.education-courses,
+.education-terms,
 .education-years {
   height: 42rem;
   grid-row: 2/5;
   justify-content: center;
 }
 
-.education-years .year-1 {
+.year-1 {
   grid-column: 1/2;
+  grid-row: 1/2 !important;
 }
-.education-years .year-2 {
+.year-2 {
   grid-column: 2/3;
+  grid-row: 1/2 !important;
 }
-.education-years .year-3 {
+.year-3 {
   grid-column: 3/4;
+  grid-row: 1/2 !important;
 }
-.education-years .year-4 {
+.year-4 {
   grid-column: 4/5;
+  grid-row: 1/2 !important;
 }
-.education-years .year-5 {
+.year-5 {
   grid-column: 5/6;
+  grid-row: 1/2 !important;
 }
 
-/* inner */
+/* inner -1 */
 .education-year {
   /* box-shadow: 0 0 0 0.5rem #00adb5 inset; */
+  background-color: #fcf7f8;
   border: 0.5rem solid #00adb5;
   box-sizing: border-box;
   border-radius: 9px;
   padding: 8rem 2rem 8rem 2rem;
   row-gap: 2rem;
+  height: 42rem;
   width: 21rem;
   transition: all 0.3s;
   cursor: pointer;
@@ -494,8 +503,228 @@
   margin-bottom: auto;
 }
 
-.current-year {
-  /* box-shadow: 0 0 0 0.5rem #7ae7c7 inset; */
+/* inner -2 */
+.education-term {
+  height: 42rem;
+  width: 21rem;
+  cursor: pointer;
+  row-gap: 2rem;
+}
+
+.education-terms .education-year {
+  border: 0.5rem solid #cc3c54;
+  box-sizing: border-box;
+  grid-column: 1/2;
+}
+.term-fall {
+  grid-column: 2/3;
+}
+.term-winter {
+  grid-column: 3/4;
+}
+.term-spring {
+  grid-column: 4/5;
+}
+.term-summer {
+  grid-column: 5/6;
+}
+
+.course-name {
+  border: 0.5rem solid #cc3c54;
+  box-sizing: border-box;
+  border-radius: 9px;
+  padding: 1rem 3rem;
+  row-gap: 2rem;
+  height: 8rem;
+  width: 21rem;
+  transition: all 0.3s;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.course-courses {
+  /* border: 0.5rem solid #00adb5;
+  box-sizing: border-box;
+  border-radius: 9px; */
+  row-gap: 1rem;
+  height: 32rem;
+  width: 21rem;
+  transition: all 0.3s;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.course {
+  border: 0.5rem solid #00adb5;
+  box-sizing: border-box;
+  border-radius: 9px;
+  padding: 1rem 3rem;
+  row-gap: 2rem;
+  height: 5.6rem;
+  width: 21rem;
+  transition: all 0.3s;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.education-terms .education-year:hover,
+.education-term:hover > .course-name {
+  transform: translateY(-1.2rem);
+  box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4);
+  color: #fff;
+  background-image: linear-gradient(120deg, #f77062 0%, #fe5196 100%);
+  border: none;
+  box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4);
+}
+
+.education-term:hover .course {
+  /* transform: translateY(-1.2rem);
+  box-shadow: 1.4rem 2.2rem rgba(0, 173, 181, 0.4); */
+}
+
+/* inner -3 */
+.education-course {
+  grid-column: 1/2;
+  height: 42rem;
+  width: 21rem;
+  cursor: pointer;
+  row-gap: 2rem;
+}
+
+.education-courses .education-descriptions {
+  grid-column: 2/6;
+  height: 42rem;
+  row-gap: 2rem;
+}
+
+.course-descriptions--courses {
+  row-gap: 1rem;
+  height: 32rem;
+  transition: all 0.3s;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.ed-courses--year {
+  border: 0.5rem solid #cc3c54;
+  box-sizing: border-box;
+  border-radius: 9px;
+  padding: 1rem 3rem;
+  row-gap: 2rem;
+  height: 8rem;
+  width: 21rem;
+  transition: all 0.3s;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.ed-courses {
+  row-gap: 1rem;
+  height: 32rem;
+  width: 21rem;
+  transition: all 0.3s;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.ed-course {
+  border: 0.5rem solid #cc3c54;
+  box-sizing: border-box;
+  border-radius: 9px;
+  padding: 1rem 3rem;
+  row-gap: 2rem;
+  height: 5.6rem;
+  width: 21rem;
+  transition: all 0.3s;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.education-description--term {
+  border: 0.5rem solid #cc3c54;
+  box-sizing: border-box;
+  border-radius: 9px;
+  padding: 1rem 3rem;
+  row-gap: 2rem;
+  height: 8rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  transition: all 0.3s;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.ed-description {
+  grid-template-columns: 72.6rem 9rem;
+  border: 0.5rem solid #00adb5;
+  box-sizing: border-box;
+  border-radius: 9px;
+  padding: 1rem 3rem;
+  row-gap: 2rem;
+  height: 5.6rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.ed-desc--name {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  justify-self: start;
+}
+
+.ed-desc--grade {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  justify-self: start;
+}
+
+.education-course:hover > .ed-courses--year {
+  transform: translateY(-1.2rem);
+  /* box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4); */
+  color: #fff;
+  background-image: linear-gradient(120deg, #f77062 0%, #fe5196 100%);
+  border: none;
+  box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4);
+}
+
+.education-description--term:hover {
+  transform: translateY(-1.2rem);
+  /* box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4); */
+  color: #fff;
+  background-image: linear-gradient(120deg, #f77062 0%, #fe5196 100%);
+  border: none;
+  box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4);
 }
 
 /* education years - mobile */
@@ -979,8 +1208,9 @@
   /* background-color: #fcf7f8; */
 }
 
-.project-intro:hover,
-.project-skills:hover {
+.portfolio-project:hover > *
+/* .project-intro:hover,
+.project-skills:hover { */ {
   transform: translateY(-1.2rem);
   color: #fff;
   background-image: linear-gradient(120deg, #f77062 0%, #fe5196 100%);
