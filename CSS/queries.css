@@ -109,7 +109,7 @@
   .course-name {
     width: 15rem;
     height: 5rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     border-width: 0.4rem !important;
   }
 
@@ -125,12 +125,12 @@
     width: 15rem;
     height: 3.8rem;
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 500;
     border-width: 0.4rem !important;
   }
 
   .ed-courses--year {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .ed-course {
@@ -140,7 +140,7 @@
   .education-description--term {
     height: 5rem;
     width: 66rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     border-width: 0.4rem !important;
   }
   .course-descriptions--courses {
@@ -150,7 +150,7 @@
   }
   .ed-description {
     padding: 0.5rem 1rem;
-    font-weight: 600;
+    font-weight: 500;
     grid-template-columns: 53rem 7rem;
     height: 3.8rem;
     width: 66rem;
@@ -487,6 +487,8 @@
   }
 
   /* education */
+  .education-courses,
+  .education-terms,
   .education-years {
     display: none;
   }

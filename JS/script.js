@@ -1,5 +1,5 @@
+// gsap.registerPlugin(MotionPathPlugin);
 /* Sticky navigaion */
-
 const topDecoEl = document.querySelector(".sticky-wrapper");
 let topWrapper = (topDecoEl.clientHeight + convertRemToPixels(1)) * -1;
 window.onresize = function (e) {
@@ -98,36 +98,36 @@ const UofC = {
       ["Year 1", "2020~2021"],
       ["ENGG - 233", "ENGG - 225", "ENGG - 201", "MATH - 275", "MATH - 211"],
       ["ENGG - 200", "ENGG - 202", "MATH - 277", "PHYS - 259", "CHEM - 209"],
-      ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
-      ["ECON - 201", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["-", "-", "-", "-", "-"],
+      ["ECON - 201", "-", "-", "-", "-"],
     ],
     [
       ["Year 2", "2021~2022"],
       ["ENSF - 337", "ENEL - 353", "ENDG - 319", "MATH - 375", "PHYS - 369"],
       ["ENSF - 409", "ENCM - 369", "ENEL - 327", "CPSC - 319", "MATH - 271"],
-      ["PSYC - 200", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
-      ["ECON - 209", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["PSYC - 200", "-", "-", "-", "-"],
+      ["ECON - 209", "-", "-", "-", "-"],
     ],
     [
       ["Year 3", "2022~2023"],
-      ["ENSF - 480", "ENCM - 511", "CPSC - 471", "CPSC - 441", "&nbsp"],
-      ["SENG - 401", "SENG - 471", "SENG - 438", "CPSC - 457", "&nbsp"],
-      ["INTERN", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
-      ["INTERN", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["ENSF - 480", "ENCM - 511", "CPSC - 471", "CPSC - 441", "-"],
+      ["SENG - 401", "SENG - 471", "SENG - 438", "CPSC - 457", "-"],
+      ["INTERN", "-", "-", "-", "-"],
+      ["INTERN", "-", "-", "-", "-"],
     ],
     [
       ["Year 4", "2023~2024"],
-      ["INTERN", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
-      ["INTERN", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
-      ["INTERN", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
-      ["INTERN", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["INTERN", "-", "-", "-", "-"],
+      ["INTERN", "-", "-", "-", "-"],
+      ["INTERN", "-", "-", "-", "-"],
+      ["INTERN", "-", "-", "-", "-"],
     ],
     [
       ["Year 5", "2024~2025"],
-      ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
-      ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
-      ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
-      ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["-", "-", "-", "-", "-"],
+      ["-", "-", "-", "-", "-"],
+      ["-", "-", "-", "-", "-"],
+      ["-", "-", "-", "-", "-"],
     ],
   ],
 };
@@ -159,25 +159,25 @@ const year1 = {
     ],
 
     [
-      ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["-", "-", "-", "-", "-"],
       [
         ["SPRING - 2021"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
       ],
     ],
     [
-      ["ECON - 201", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["ECON - 201", "-", "-", "-", "-"],
       [
         ["SUMMER - 2021"],
         ["Principles of Microeconomics", "Grade: A"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
       ],
     ],
   ],
@@ -210,25 +210,25 @@ const year2 = {
     ],
 
     [
-      ["PSYC - 200", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["PSYC - 200", "-", "-", "-", "-"],
       [
         ["SPRING - 2022"],
         ["Principles of Psychology I", "Grade: B+"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
       ],
     ],
     [
-      ["ECON - 209", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["ECON - 209", "-", "-", "-", "-"],
       [
         ["SUMMER - 2022"],
         ["Engineering Economics", "Grade: IP"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
       ],
     ],
   ],
@@ -237,49 +237,49 @@ const year2 = {
 const year3 = {
   terms: [
     [
-      ["ENSF - 480", "ENCM - 511", "CPSC - 471", "CPSC - 441", "&nbsp"],
+      ["ENSF - 480", "ENCM - 511", "CPSC - 471", "CPSC - 441", "-"],
       [
         ["FALL - 2022"],
         ["Principles of Software Design", "Grade: IP"],
         ["Embedded System Interfacing", "Grade: IP"],
         ["Data Base Management Systems", "Grade: IP"],
         ["Computer Networks", "Grade: IP"],
-        ["&nbsp", "&nbsp"],
+        ["", "-"],
       ],
     ],
 
     [
-      ["SENG - 401", "SENG - 471", "SENG - 438", "CPSC - 457", "&nbsp"],
+      ["SENG - 401", "SENG - 471", "SENG - 438", "CPSC - 457", "-"],
       [
         ["WINTER - 2023"],
         ["Software Architecture", "Grade: IP"],
         ["Software Requirements Engineering", "Grade: IP"],
         ["Software Testing, Reliability, and Quality", "Grade: IP"],
         ["Principles of Operating Systems", "Grade: IP"],
-        ["&nbsp", "&nbsp"],
+        ["", "-"],
       ],
     ],
 
     [
-      ["INTERN", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["INTERN", "-", "-", "-", "-"],
       [
         ["SPRING - 2023"],
-        ["INTERNSHIP", "Company"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
+        ["FULL TIME INTERNSHIP", "Company"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
       ],
     ],
     [
-      ["INTERN", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["INTERN", "-", "-", "-", "-"],
       [
         ["SUMMER - 2023"],
-        ["INTERNSHIP", "Company"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
+        ["FULL TIME INTERNSHIP", "Company"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
       ],
     ],
   ],
@@ -288,49 +288,49 @@ const year3 = {
 const year4 = {
   terms: [
     [
-      ["INTERN", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["INTERN", "-", "-", "-", "-"],
       [
         ["FALL - 2023"],
-        ["INTERNSHIP", "Company"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
+        ["FULL TIME INTERNSHIP", "Company"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
       ],
     ],
 
     [
-      ["INTERN", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["INTERN", "-", "-", "-", "-"],
       [
         ["WINTER - 2024"],
-        ["INTERNSHIP", "Company"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
+        ["FULL TIME INTERNSHIP", "Company"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
       ],
     ],
 
     [
-      ["INTERN", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["INTERN", "-", "-", "-", "-"],
       [
         ["SPRING - 2024"],
-        ["INTERNSHIP", "Company"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
+        ["FULL TIME INTERNSHIP", "Company"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
       ],
     ],
     [
-      ["INTERN", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["INTERN", "-", "-", "-", "-"],
       [
         ["SUMMER - 2024"],
-        ["INTERNSHIP", "Company"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
+        ["FULL TIME INTERNSHIP", "Company"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
       ],
     ],
   ],
@@ -339,49 +339,42 @@ const year4 = {
 const year5 = {
   terms: [
     [
-      ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
-      [
-        ["FALL - 2024"],
-        ["INTERNSHIP", "Company"],
-        ["Course", "Grade: "],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-      ],
+      ["-", "-", "-", "-", "-"],
+      [["FALL - 2024"], ["", "-"], ["", "-"], ["", "-"], ["", "-"], ["", "-"]],
     ],
 
     [
-      ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["-", "-", "-", "-", "-"],
       [
         ["WINTER - 2025"],
-        ["Course", "Grade: "],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
       ],
     ],
 
     [
-      ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["-", "-", "-", "-", "-"],
       [
         ["SPRING - 2025"],
-        ["Course", "Grade: "],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
       ],
     ],
     [
-      ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
+      ["-", "-", "-", "-", "-"],
       [
         ["SUMMER - 2025"],
-        ["Course", "Grade: "],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
-        ["&nbsp", "&nbsp"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
+        ["", "-"],
       ],
     ],
   ],
@@ -428,12 +421,19 @@ function updateCourses(year, term) {
     edu_desc_grade.item(i).textContent = UofC_Years[Y].terms[T][1][i + 1][1];
   }
 }
+
+/* year and terms */
+let year = 0;
+let term = 0;
 /* Education Champters */
 const edu_YEARS = document.querySelector(".education-years");
 const edu_TERMS = document.querySelector(".education-terms");
 const edu_COURSES = document.querySelector(".education-courses");
 
 /* buttons for edu-years */
+const btn_eduYears = document.querySelectorAll(
+  ".education-years .education-year"
+);
 const btn_eduYear_1 = document.querySelector(".education-years .year-1");
 const btn_eduYear_2 = document.querySelector(".education-years .year-2");
 const btn_eduYear_3 = document.querySelector(".education-years .year-3");
@@ -471,18 +471,307 @@ const edu_desc_term = document.querySelector(".education-description--term");
 const edu_desc_name = document.querySelectorAll(".ed-desc--name");
 const edu_desc_grade = document.querySelectorAll(".ed-desc--grade");
 
+/* functions for animation */
+////////////////TERMS////////////////
+let P_T4_Y;
+let P_T3_Y;
+let P_T2_Y;
+let P_T1_Y;
+let PATH_TERM;
+
+function calcPathTerms() {
+  P_T4_Y = MotionPathPlugin.convertCoordinates(
+    btn_terms_summer,
+    btn_edu_terms_year,
+    {
+      x: 0,
+      y: 0,
+    }
+  );
+
+  P_T3_Y = MotionPathPlugin.convertCoordinates(
+    btn_terms_spring,
+    btn_edu_terms_year,
+    {
+      x: 0,
+      y: 0,
+    }
+  );
+
+  P_T2_Y = MotionPathPlugin.convertCoordinates(
+    btn_terms_winter,
+    btn_edu_terms_year,
+    {
+      x: 0,
+      y: 0,
+    }
+  );
+
+  P_T1_Y = MotionPathPlugin.convertCoordinates(
+    btn_terms_fall,
+    btn_edu_terms_year,
+    {
+      x: 0,
+      y: 0,
+    }
+  );
+  PATH_TERM = [P_T1_Y, P_T2_Y, P_T3_Y, P_T4_Y];
+}
+const terms = ["fall", "winter", "spring", "summer"];
+function ani_TermClose(term) {
+  calcPathTerms();
+  T = term - 1;
+  let targetTermS = ".education-terms ." + "term-" + terms[T];
+  let targetTerm = document.querySelector(targetTermS);
+  let p = PATH_TERM[T];
+  console.log(targetTerm);
+  console.log(p);
+  gsap.to(targetTerm, {
+    x: p.x * -1,
+    duration: 0.3,
+    delay: 0.0,
+  });
+
+  gsap.to(btn_edu_terms_year, {
+    x: p.x * 1,
+    duration: 0.3,
+    delay: 0.0,
+  });
+  return;
+}
+
+let PB_T4_Y;
+let PB_T3_Y;
+let PB_T2_Y;
+let PB_T1_Y;
+let PATH_B_TERM;
+function calcPath_B_Terms() {
+  PB_T4_Y = MotionPathPlugin.convertCoordinates(
+    btn_edu_terms_year,
+    btn_terms_summer,
+    {
+      x: P_T4_Y.x * -1,
+      y: 0,
+    }
+  );
+
+  PB_T3_Y = MotionPathPlugin.convertCoordinates(
+    btn_edu_terms_year,
+    btn_terms_spring,
+
+    {
+      x: P_T3_Y.x * -1,
+      y: 0,
+    }
+  );
+
+  PB_T2_Y = MotionPathPlugin.convertCoordinates(
+    btn_edu_terms_year,
+    btn_terms_winter,
+
+    {
+      x: P_T2_Y.x * -1,
+      y: 0,
+    }
+  );
+
+  PB_T1_Y = MotionPathPlugin.convertCoordinates(
+    btn_edu_terms_year,
+    btn_terms_fall,
+    {
+      x: P_T1_Y.x * -1,
+      y: 0,
+    }
+  );
+  PATH_B_TERM = [PB_T1_Y, PB_T2_Y, PB_T3_Y, PB_T4_Y];
+}
+
+function ani_TermOpen(term) {
+  calcPath_B_Terms();
+  T = term - 1;
+  let targetTermS = ".education-terms ." + "term-" + terms[T];
+  let targetTerm = document.querySelector(targetTermS);
+
+  $(btn_edu_terms_year).addClass("termSelected");
+  let p = PATH_B_TERM[T];
+  gsap.to(targetTerm, {
+    x: p.x * -1,
+    duration: 0.3,
+    delay: 0.0,
+  });
+
+  gsap.to(btn_edu_terms_year, {
+    x: p.x,
+    duration: 0.3,
+    delay: 0.0,
+  });
+  return;
+}
+
+function removeAttrTerms() {
+  $(".education-terms .education-year").removeAttr("style");
+  $(".education-terms .term-fall").removeAttr("style");
+  $(".education-terms .term-winter").removeAttr("style");
+  $(".education-terms .term-spring").removeAttr("style");
+  $(".education-terms .term-summer").removeAttr("style");
+}
+////////////////YEARS////////////////
+const P_Y5_Y1 = MotionPathPlugin.convertCoordinates(
+  btn_eduYear_1,
+  btn_eduYear_5,
+  {
+    x: 0,
+    y: 0,
+  }
+);
+const P_Y4_Y1 = MotionPathPlugin.convertCoordinates(
+  btn_eduYear_1,
+  btn_eduYear_4,
+  {
+    x: 0,
+    y: 0,
+  }
+);
+const P_Y3_Y1 = MotionPathPlugin.convertCoordinates(
+  btn_eduYear_1,
+  btn_eduYear_3,
+  {
+    x: 0,
+    y: 0,
+  }
+);
+const P_Y2_Y1 = MotionPathPlugin.convertCoordinates(
+  btn_eduYear_1,
+  btn_eduYear_2,
+  {
+    x: 0,
+    y: 0,
+  }
+);
+const P_Y1_Y1 = MotionPathPlugin.convertCoordinates(
+  btn_eduYear_1,
+  btn_eduYear_1,
+  {
+    x: 0,
+    y: 0,
+  }
+);
+
+const PATH_YEAR = [P_Y1_Y1, P_Y2_Y1, P_Y3_Y1, P_Y4_Y1, P_Y5_Y1];
+
+function ani_YearClose(year) {
+  Y = year - 1;
+  let targetYearS = ".education-years .year-" + year;
+  let targetYear = document.querySelector(targetYearS);
+  let p = PATH_YEAR[Y];
+  console.log(p);
+  gsap.to(targetYear, {
+    x: p.x,
+    duration: 0.3,
+    delay: 0.0,
+  });
+
+  gsap.to(btn_eduYear_1, {
+    x: p.x * -1,
+    duration: 0.3,
+    delay: 0.0,
+  });
+
+  return;
+}
+
+const PB_Y5_Y1 = MotionPathPlugin.convertCoordinates(
+  btn_eduYear_5,
+  btn_eduYear_1,
+  {
+    x: P_Y5_Y1.x,
+    y: 0,
+  }
+);
+const PB_Y4_Y1 = MotionPathPlugin.convertCoordinates(
+  btn_eduYear_4,
+  btn_eduYear_1,
+  {
+    x: P_Y4_Y1.x,
+    y: 0,
+  }
+);
+const PB_Y3_Y1 = MotionPathPlugin.convertCoordinates(
+  btn_eduYear_3,
+  btn_eduYear_1,
+  {
+    x: P_Y3_Y1,
+    y: 0,
+  }
+);
+const PB_Y2_Y1 = MotionPathPlugin.convertCoordinates(
+  btn_eduYear_2,
+  btn_eduYear_1,
+  {
+    x: P_Y2_Y1,
+    y: 0,
+  }
+);
+const PB_Y1_Y1 = MotionPathPlugin.convertCoordinates(
+  btn_eduYear_1,
+  btn_eduYear_1,
+  {
+    x: P_Y1_Y1,
+    y: 0,
+  }
+);
+
+const PATH_B_YEAR = [PB_Y1_Y1, PB_Y2_Y1, PB_Y3_Y1, PB_Y4_Y1, PB_Y5_Y1];
+function ani_YearOpen(year) {
+  Y = year - 1;
+  let targetYearS = ".education-years .year-" + year;
+  let targetYear = document.querySelector(targetYearS);
+  $(targetYear).css({
+    "border-color": "#cc3c54",
+    "transform:": "translateY(-1.2rem)",
+    "box-shadow": "1.4rem 2.2rem rgba(195, 60, 85, 0.4)",
+  });
+  let p = PATH_B_YEAR[Y];
+  gsap.to(targetYear, {
+    x: p.x,
+    duration: 0.3,
+    delay: 0.0,
+  });
+  gsap.to(btn_eduYear_1, {
+    x: p.x * -1,
+    duration: 0.3,
+    delay: 0.0,
+  });
+
+  return;
+}
+
+function removeAttrYears() {
+  $(".education-years .year-1").removeAttr("style");
+  $(".education-years .year-2").removeAttr("style");
+  $(".education-years .year-3").removeAttr("style");
+  $(".education-years .year-4").removeAttr("style");
+  $(".education-years .year-5").removeAttr("style");
+}
+
 /* functions for navigate Educatation */
-openYears();
+openYears(true);
 
-let year = 0;
-let term = 0;
+function openYears(reset) {
+  if (reset == false) {
+    ani_YearOpen(year);
+  }
+  setTimeout(function () {
+    btn_eduYear_1.addEventListener("click", openTermsYear1);
+    btn_eduYear_2.addEventListener("click", openTermsYear2);
+    btn_eduYear_3.addEventListener("click", openTermsYear3);
+    btn_eduYear_4.addEventListener("click", openTermsYear4);
+    btn_eduYear_5.addEventListener("click", openTermsYear5);
+  }, 400);
 
-function openYears() {
-  btn_eduYear_1.addEventListener("click", openTermsYear1);
-  btn_eduYear_2.addEventListener("click", openTermsYear2);
-  btn_eduYear_3.addEventListener("click", openTermsYear3);
-  btn_eduYear_4.addEventListener("click", openTermsYear4);
-  btn_eduYear_5.addEventListener("click", openTermsYear5);
+  setTimeout(function () {
+    removeAttrYears();
+  }, 800);
   return;
 }
 
@@ -496,8 +785,11 @@ function removeYearsEL() {
 }
 
 function closeYears() {
-  edu_YEARS.classList.add("hidden");
-  edu_TERMS.classList.remove("hidden");
+  ani_YearClose(year);
+  setTimeout(function () {
+    edu_YEARS.classList.add("hidden");
+    edu_TERMS.classList.remove("hidden");
+  }, 400);
   return;
 }
 
@@ -506,7 +798,7 @@ function openTermsYear1() {
   updateTerms(year);
   removeYearsEL();
   closeYears();
-  openTerms();
+  openTerms(false);
   console.log("currently in year 1");
   return;
 }
@@ -516,7 +808,7 @@ function openTermsYear2() {
   updateTerms(year);
   removeYearsEL();
   closeYears();
-  openTerms();
+  openTerms(false);
   console.log("currently in year 2");
   return;
 }
@@ -526,7 +818,7 @@ function openTermsYear3() {
   updateTerms(year);
   removeYearsEL();
   closeYears();
-  openTerms();
+  openTerms(false);
   console.log("currently in year 3");
   return;
 }
@@ -536,7 +828,7 @@ function openTermsYear4() {
   updateTerms(year);
   removeYearsEL();
   closeYears();
-  openTerms();
+  openTerms(false);
   console.log("currently in year 4");
   return;
 }
@@ -546,17 +838,32 @@ function openTermsYear5() {
   updateTerms(year);
   removeYearsEL();
   closeYears();
-  openTerms();
+  openTerms(false);
   console.log("currently in year 5");
   return;
 }
 
-function openTerms() {
-  btn_edu_terms_year.addEventListener("click", return_TY);
-  btn_terms_fall.addEventListener("click", openCoursesTerm1);
-  btn_terms_winter.addEventListener("click", openCoursesTerm2);
-  btn_terms_spring.addEventListener("click", openCoursesTerm3);
-  btn_terms_summer.addEventListener("click", openCoursesTerm4);
+function openTerms(ret) {
+  if (ret == true) {
+    ani_TermOpen(term);
+    setTimeout(function () {
+      btn_edu_terms_year.addEventListener("click", return_TY);
+      btn_terms_fall.addEventListener("click", openCoursesTerm1);
+      btn_terms_winter.addEventListener("click", openCoursesTerm2);
+      btn_terms_spring.addEventListener("click", openCoursesTerm3);
+      btn_terms_summer.addEventListener("click", openCoursesTerm4);
+    }, 400);
+    setTimeout(function () {
+      removeAttrTerms();
+      $(btn_edu_terms_year).removeClass("termSelected");
+    }, 800);
+  } else {
+    btn_edu_terms_year.addEventListener("click", return_TY);
+    btn_terms_fall.addEventListener("click", openCoursesTerm1);
+    btn_terms_winter.addEventListener("click", openCoursesTerm2);
+    btn_terms_spring.addEventListener("click", openCoursesTerm3);
+    btn_terms_summer.addEventListener("click", openCoursesTerm4);
+  }
   return;
 }
 
@@ -570,8 +877,12 @@ function removeTermsEL() {
 }
 
 function closeTerms() {
-  edu_TERMS.classList.add("hidden");
-  edu_COURSES.classList.remove("hidden");
+  ani_TermClose(term);
+  setTimeout(function () {
+    edu_TERMS.classList.add("hidden");
+    edu_COURSES.classList.remove("hidden");
+  }, 600);
+
   return;
 }
 
@@ -584,7 +895,7 @@ function closeTermsY() {
 function return_TY() {
   removeTermsEL();
   closeTermsY();
-  openYears();
+  openYears(false);
   values("return_CT");
   console.log("return from Terms to year");
   return;
@@ -652,7 +963,9 @@ function closeCourses() {
 function return_CT() {
   removeCoursesEL();
   closeCourses();
-  openTerms();
+  setTimeout(function () {
+    openTerms(true);
+  }, 50);
   values("return_CT");
   console.log("return from course to term");
   return;
@@ -660,7 +973,10 @@ function return_CT() {
 
 function return_CY() {
   return_CT();
-  return_TY();
+  setTimeout(function () {
+    return_TY();
+  }, 1300);
+
   values("return_CY");
   return;
 }

@@ -78,17 +78,6 @@ textarea {
   }
 }
 
-.education-years .selected {
-  transform: translateY(-1.2rem);
-  transition: all 0.3s !important;
-  border: 0.5rem solid #cc3c54;
-  box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4);
-  box-sizing: border-box;
-  border-radius: 9px;
-  grid-column: 1/2 !important;
-  grid-row: 1/2 !important;
-}
-
 .margin-top--L {
   margin-top: 9.6rem;
 }

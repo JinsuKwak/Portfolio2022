@@ -533,6 +533,7 @@
   border: 0.5rem solid #cc3c54;
   box-sizing: border-box;
   border-radius: 9px;
+  background-color: #fcf7f8;
   padding: 1rem 3rem;
   row-gap: 2rem;
   height: 8rem;
@@ -567,6 +568,7 @@
   border: 0.5rem solid #00adb5;
   box-sizing: border-box;
   border-radius: 9px;
+  background-color: #fcf7f8;
   padding: 1rem 3rem;
   row-gap: 2rem;
   height: 5.6rem;
@@ -1218,4 +1220,14 @@
   border: none;
   box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4);
   /* box-shadow: 0 0 0 0.5rem #cc3c54  inset; */
+}
+
+.yearSelected {
+}
+.termSelected {
+  transform: translateY(-1.2rem);
+  color: #fff;
+  background-image: linear-gradient(120deg, #f77062 0%, #fe5196 100%);
+  border: none !important;
+  box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4);
 }
