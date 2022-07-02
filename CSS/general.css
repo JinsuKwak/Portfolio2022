@@ -226,6 +226,9 @@ ion-icon {
   align-self: center;
 }
 
+.onClick_skills {
+}
+
 .skill ion-icon {
   grid-column: 1/2;
 }

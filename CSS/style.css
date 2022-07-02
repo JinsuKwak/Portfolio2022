@@ -295,27 +295,44 @@
   display: block;
   justify-self: center;
   align-self: center;
-  border: 0.2rem solid #fff;
   padding: 0 2rem;
   height: 1.8rem;
   width: 3.6em;
 }
 
-.skill-level--1 {
+.skills-techskill-item .skills-level .skill-level--1 {
   grid-column: 1/2;
+  border-left: 0.2rem solid #fff;
+  transition: all 0.3s;
+  background-color: #bac8ff;
+  background-color: #c5f6fa;
   border-radius: 10rem 0 0 10rem;
 }
 .skill-level--2 {
   grid-column: 2/3;
+  transition: all 0.3s;
+  background-color: #748ffc;
+  background-color: #66d9e8;
 }
 .skill-level--3 {
   grid-column: 3/4;
+  transition: all 0.3s;
+  background-color: #4c6ef5;
+
+  background-color: #22b8cf;
 }
 .skill-level--4 {
   grid-column: 4/5;
+  transition: all 0.3s;
+  background-color: #3b5bdb;
+  background-color: #1098ad;
 }
-.skill-level--5 {
+.skills-techskill-item .skills-level .skill-level--5 {
   grid-column: 5/6;
+  border-right: 0.2rem solid #fff;
+  transition: all 0.3s;
+  background-color: #364fc7;
+  background-color: #0b7285;
   border-radius: 0 10rem 10rem 0;
 }
 
@@ -349,6 +366,10 @@
   font-size: 1.6rem;
 }
 
+/* .skills-techskills-item--name p {
+  font-weight: 500;
+} */
+
 .skills-techskill-item p {
   grid-column: 2/3;
   font-size: 1.4rem;
@@ -365,12 +386,35 @@
 }
 
 .skills-techskill-item .skills-level div {
-  border: 0.2rem solid #fff;
+  border-top: 0.2rem solid #fff;
+  border-bottom: 0.2rem solid #fff;
+  border-left: 0.1rem solid #fff;
+  border-right: 0.1rem solid #fff;
+  /* border: 0.2rem solid #fff; */
   padding: 0 2rem;
   height: 2.8rem;
   width: 9.6rem;
 }
 
+.skills-level {
+  position: relative;
+}
+
+.skills-level-desc {
+  display: grid !important;
+  grid-column: 3/4 !important;
+  justify-content: center;
+  align-content: center;
+  width: 48rem !important;
+  border: none !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  text-transform: uppercase;
+  font-weight: 500;
+}
 /* mytools */
 .skills-toollist {
   display: flex;
@@ -402,6 +446,147 @@
   padding: 0.5rem;
   height: 2rem;
   border-radius: 6px;
+}
+
+/* JAVA */
+.Java ~ .skills-level div:nth-child(1) {
+}
+.Java ~ .skills-level div:nth-child(2) {
+}
+.Java ~ .skills-level div:nth-child(3) {
+}
+.Java ~ .skills-level div:nth-child(4) {
+}
+.container
+  .skills
+  .skills-techskills
+  .skills-techskills--myskills
+  .Java
+  ~ .skills-level
+  div:nth-child(6) {
+  background-color: #393e46;
+}
+
+/* C/C++ */
+.cCpp ~ .skills-level div:nth-child(1) {
+}
+.cCpp ~ .skills-level div:nth-child(2) {
+}
+.cCpp ~ .skills-level div:nth-child(3) {
+}
+.container
+  .skills
+  .skills-techskills
+  .skills-techskills--myskills
+  .cCpp
+  ~ .skills-level
+  div:nth-child(5) {
+  background-color: #393e46;
+}
+.container
+  .skills
+  .skills-techskills
+  .skills-techskills--myskills
+  .cCpp
+  ~ .skills-level
+  div:nth-child(6) {
+  background-color: #393e46;
+}
+
+/* Python */
+.Python ~ .skills-level div:nth-child(1) {
+}
+.Python ~ .skills-level div:nth-child(2) {
+}
+.Python ~ .skills-level div:nth-child(3) {
+}
+.container
+  .skills
+  .skills-techskills
+  .skills-techskills--myskills
+  .Python
+  ~ .skills-level
+  div:nth-child(5) {
+  background-color: #393e46;
+}
+.container
+  .skills
+  .skills-techskills
+  .skills-techskills--myskills
+  .Python
+  ~ .skills-level
+  div:nth-child(6) {
+  background-color: #393e46;
+}
+
+/* HTML/CSS */
+
+.HTMLCSS ~ .skills-level div:nth-child(1) {
+}
+
+.HTMLCSS ~ .skills-level div:nth-child(2) {
+}
+.container
+  .skills
+  .skills-techskills
+  .skills-techskills--myskills
+  .HTMLCSS
+  ~ .skills-level
+  div:nth-child(4) {
+  background-color: #393e46;
+}
+.container
+  .skills
+  .skills-techskills
+  .skills-techskills--myskills
+  .HTMLCSS
+  ~ .skills-level
+  div:nth-child(5) {
+  background-color: #393e46;
+}
+.container
+  .skills
+  .skills-techskills
+  .skills-techskills--myskills
+  .HTMLCSS
+  ~ .skills-level
+  div:nth-child(6) {
+  background-color: #393e46;
+}
+
+/* JavaScript */
+
+div:nth-child(1) {
+}
+
+div:nth-child(2) {
+}
+.container
+  .skills
+  .skills-techskills
+  .skills-techskills--myskills
+  .JavaScript
+  ~ .skills-level
+  div:nth-child(4) {
+  background-color: #393e46;
+}
+.container
+  .skills
+  .skills-techskills
+  .skills-techskills--myskills
+  .JavaScript
+  ~ .skills-level
+  div:nth-child(5) {
+  background-color: #393e46;
+}
+.container
+  .skills
+  .skills-techskills
+  .skills-techskills--myskills
+  .JavaScript
+  ~ .skills-level
+  div:nth-child(6) {
+  background-color: #393e46;
 }
 
 /**************************/
@@ -1199,6 +1384,51 @@
   background-color: #cc3c54;
 }
 
+.skills-techskills--levels:hover
+  ~ .skills-techskills--myskills
+  .skills-techskill-item
+  .skills-level
+  div:nth-child(1) {
+  background-color: #ffdeeb;
+  background-color: #ffe3e3;
+}
+
+.skills-techskills--levels:hover
+  ~ .skills-techskills--myskills
+  .skills-techskill-item
+  .skills-level
+  div:nth-child(2) {
+  background-color: #faa2c1;
+  background-color: #ffa8a8;
+}
+
+.skills-techskills--levels:hover
+  ~ .skills-techskills--myskills
+  .skills-techskill-item
+  .skills-level
+  div:nth-child(3) {
+  background-color: #f06595;
+  background-color: #ff6b6b;
+}
+
+.skills-techskills--levels:hover
+  ~ .skills-techskills--myskills
+  .skills-techskill-item
+  .skills-level
+  div:nth-child(4) {
+  background-color: #d6336c;
+  background-color: #f03e3e;
+}
+
+.skills-techskills--levels:hover
+  ~ .skills-techskills--myskills
+  .skills-techskill-item
+  .skills-level
+  div:nth-child(5) {
+  background-color: #a61e4d;
+  background-color: #c92a2a;
+}
+
 .section-portfolio {
   color: #393e46;
 }
@@ -1211,9 +1441,7 @@
   /* background-color: #fcf7f8; */
 }
 
-.portfolio-project:hover > *
-/* .project-intro:hover,
-.project-skills:hover { */ {
+.portfolio-project:hover > * {
   transform: translateY(-1.2rem);
   color: #fff;
   background-image: linear-gradient(120deg, #f77062 0%, #fe5196 100%);

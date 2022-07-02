@@ -89,6 +89,38 @@ obss[1].observe(sectionEl[2]);
 obss[2].observe(sectionEl[3]);
 obss[3].observe(sectionEl[4]);
 obss[4].observe(sectionEl[5]);
+/* Skills interaction */
+const btn_skills = document.querySelector(".skills-techskills--levels");
+const skillLevelsEl = document.querySelectorAll(".skills-level > div");
+const skillLevel = document.querySelectorAll(".skills-level-desc");
+
+btn_skills.addEventListener("click", function () {
+  if (btn_skills.classList.contains("onClick_skills")) {
+    btn_skills.classList.remove("onClick_skills");
+    for (let i = 0; i < skillLevelsEl.length; i++) {
+      skillLevelsEl.item(i).removeAttribute("style");
+    }
+    for (let i = 0; i < skillLevel.length; i++) {
+      skillLevel.item(i).classList.add("hidden");
+    }
+    btn_skills.removeAttribute("style");
+  } else {
+    btn_skills.classList.add("onClick_skills");
+    for (let i = 0; i < skillLevelsEl.length; i++) {
+      skillLevelsEl.item(i).style.backgroundColor = "#fff";
+      skillLevelsEl.item(i).style.border = "none";
+
+      // border-top: 0.2rem solid #fff;
+      // border-bottom: 0.2rem solid #fff;
+      // border-left: 0.1rem solid #fff;
+      // border-right: 0.1rem solid #fff
+    }
+    for (let i = 0; i < skillLevel.length; i++) {
+      skillLevel.item(i).classList.remove("hidden");
+    }
+    btn_skills.style.backgroundColor = "#cc3c54";
+  }
+});
 
 /* Education animation */
 /* Education Texts */
@@ -198,14 +230,14 @@ const year2 = {
     ],
 
     [
-      ["ENGG - 200", "ENGG - 202", "MATH - 277", "PHYS - 259", "CHEM - 209"],
+      ["ENSF - 409", "ENCM - 369", "ENEL - 327", "CPSC - 319", "MATH - 271"],
       [
         ["WINTER - 2022"],
-        ["Engineering Design and Communication", "Grade: A"],
-        ["Engineering Statics", "Grade: B+"],
-        ["Multivariable Calculus for Engineers and Scientists", "Grade: B+"],
-        ["Electricity and Magnetism", "Grade: A"],
-        ["General Chemistry For Engineers", "Grade: A"],
+        ["Principles of Software Development", "Grade: A+"],
+        ["Computer Organization", "Grade: A"],
+        ["Signals and Transforms", "Grade: A-"],
+        ["Data Structures, Algorithms, and Their Applications", "Grade: A"],
+        ["Discrete Mathematics", "Grade: A"],
       ],
     ],
 
@@ -616,57 +648,46 @@ function removeAttrTerms() {
   $(".education-terms .term-summer").removeAttr("style");
 }
 ////////////////YEARS////////////////
-const P_Y5_Y1 = MotionPathPlugin.convertCoordinates(
-  btn_eduYear_1,
-  btn_eduYear_5,
-  {
-    x: 0,
-    y: 0,
-  }
-);
-const P_Y4_Y1 = MotionPathPlugin.convertCoordinates(
-  btn_eduYear_1,
-  btn_eduYear_4,
-  {
-    x: 0,
-    y: 0,
-  }
-);
-const P_Y3_Y1 = MotionPathPlugin.convertCoordinates(
-  btn_eduYear_1,
-  btn_eduYear_3,
-  {
-    x: 0,
-    y: 0,
-  }
-);
-const P_Y2_Y1 = MotionPathPlugin.convertCoordinates(
-  btn_eduYear_1,
-  btn_eduYear_2,
-  {
-    x: 0,
-    y: 0,
-  }
-);
-const P_Y1_Y1 = MotionPathPlugin.convertCoordinates(
-  btn_eduYear_1,
-  btn_eduYear_1,
-  {
-    x: 0,
-    y: 0,
-  }
-);
+let P_Y5_Y1;
+let P_Y4_Y1;
+let P_Y3_Y1;
+let P_Y2_Y1;
+let P_Y1_Y1;
+let PATH_YEAR;
 
-const PATH_YEAR = [P_Y1_Y1, P_Y2_Y1, P_Y3_Y1, P_Y4_Y1, P_Y5_Y1];
+function calcPath_Years() {
+  P_Y5_Y1 = MotionPathPlugin.convertCoordinates(btn_eduYear_1, btn_eduYear_5, {
+    x: 0,
+    y: 0,
+  });
+  P_Y4_Y1 = MotionPathPlugin.convertCoordinates(btn_eduYear_1, btn_eduYear_4, {
+    x: 0,
+    y: 0,
+  });
+  P_Y3_Y1 = MotionPathPlugin.convertCoordinates(btn_eduYear_1, btn_eduYear_3, {
+    x: 0,
+    y: 0,
+  });
+  P_Y2_Y1 = MotionPathPlugin.convertCoordinates(btn_eduYear_1, btn_eduYear_2, {
+    x: 0,
+    y: 0,
+  });
+  P_Y1_Y1 = MotionPathPlugin.convertCoordinates(btn_eduYear_1, btn_eduYear_1, {
+    x: 0,
+    y: 0,
+  });
 
+  PATH_YEAR = [P_Y1_Y1, P_Y2_Y1, P_Y3_Y1, P_Y4_Y1, P_Y5_Y1];
+}
 function ani_YearClose(year) {
+  calcPath_Years();
   Y = year - 1;
   let targetYearS = ".education-years .year-" + year;
   let targetYear = document.querySelector(targetYearS);
   let p = PATH_YEAR[Y];
   console.log(p);
   gsap.to(targetYear, {
-    x: p.x,
+    x: p.x * 1,
     duration: 0.3,
     delay: 0.0,
   });
@@ -680,49 +701,38 @@ function ani_YearClose(year) {
   return;
 }
 
-const PB_Y5_Y1 = MotionPathPlugin.convertCoordinates(
-  btn_eduYear_5,
-  btn_eduYear_1,
-  {
-    x: P_Y5_Y1.x,
-    y: 0,
-  }
-);
-const PB_Y4_Y1 = MotionPathPlugin.convertCoordinates(
-  btn_eduYear_4,
-  btn_eduYear_1,
-  {
-    x: P_Y4_Y1.x,
-    y: 0,
-  }
-);
-const PB_Y3_Y1 = MotionPathPlugin.convertCoordinates(
-  btn_eduYear_3,
-  btn_eduYear_1,
-  {
-    x: P_Y3_Y1,
-    y: 0,
-  }
-);
-const PB_Y2_Y1 = MotionPathPlugin.convertCoordinates(
-  btn_eduYear_2,
-  btn_eduYear_1,
-  {
-    x: P_Y2_Y1,
-    y: 0,
-  }
-);
-const PB_Y1_Y1 = MotionPathPlugin.convertCoordinates(
-  btn_eduYear_1,
-  btn_eduYear_1,
-  {
-    x: P_Y1_Y1,
-    y: 0,
-  }
-);
+let PB_Y5_Y1;
+let PB_Y4_Y;
+let PB_Y3_Y1;
+let PB_Y2_Y1;
+let PB_Y1_Y1;
+let PATH_B_YEAR;
 
-const PATH_B_YEAR = [PB_Y1_Y1, PB_Y2_Y1, PB_Y3_Y1, PB_Y4_Y1, PB_Y5_Y1];
+function calcPath_B_Years() {
+  PB_Y5_Y1 = MotionPathPlugin.convertCoordinates(btn_eduYear_5, btn_eduYear_1, {
+    x: P_Y5_Y1.x * -1,
+    y: 0,
+  });
+  PB_Y4_Y1 = MotionPathPlugin.convertCoordinates(btn_eduYear_4, btn_eduYear_1, {
+    x: P_Y4_Y1.x * -1,
+    y: 0,
+  });
+  PB_Y3_Y1 = MotionPathPlugin.convertCoordinates(btn_eduYear_3, btn_eduYear_1, {
+    x: P_Y3_Y1.x * -1,
+    y: 0,
+  });
+  PB_Y2_Y1 = MotionPathPlugin.convertCoordinates(btn_eduYear_2, btn_eduYear_1, {
+    x: P_Y2_Y1.x * -1,
+    y: 0,
+  });
+  PB_Y1_Y1 = MotionPathPlugin.convertCoordinates(btn_eduYear_1, btn_eduYear_1, {
+    x: P_Y1_Y1.x * -1,
+    y: 0,
+  });
+  PATH_B_YEAR = [PB_Y1_Y1, PB_Y2_Y1, PB_Y3_Y1, PB_Y4_Y1, PB_Y5_Y1];
+}
 function ani_YearOpen(year) {
+  calcPath_B_Years();
   Y = year - 1;
   let targetYearS = ".education-years .year-" + year;
   let targetYear = document.querySelector(targetYearS);
@@ -733,12 +743,12 @@ function ani_YearOpen(year) {
   });
   let p = PATH_B_YEAR[Y];
   gsap.to(targetYear, {
-    x: p.x,
+    x: p.x * -1,
     duration: 0.3,
     delay: 0.0,
   });
   gsap.to(btn_eduYear_1, {
-    x: p.x * -1,
+    x: p.x * 1,
     duration: 0.3,
     delay: 0.0,
   });
@@ -754,11 +764,29 @@ function removeAttrYears() {
   $(".education-years .year-5").removeAttr("style");
 }
 
+////////////////CLICK DISABLE////////////////
 /* functions for navigate Educatation */
+function clickDisableYears() {
+  $(".education-years .year-1").css({ "pointer-events": "none" });
+  $(".education-years .year-2").css({ "pointer-events": "none" });
+  $(".education-years .year-3").css({ "pointer-events": "none" });
+  $(".education-years .year-4").css({ "pointer-events": "none" });
+  $(".education-years .year-5").css({ "pointer-events": "none" });
+}
+
+function clickDisableTerms() {
+  $(".education-terms .education-years").css({ "pointer-events": "none" });
+  $(".education-terms .term-fall").css({ "pointer-events": "none" });
+  $(".education-terms .term-winter").css({ "pointer-events": "none" });
+  $(".education-terms .term-spring").css({ "pointer-events": "none" });
+  $(".education-terms .term-summer").css({ "pointer-events": "none" });
+}
+
 openYears(true);
 
 function openYears(reset) {
   if (reset == false) {
+    clickDisableYears();
     ani_YearOpen(year);
   }
   setTimeout(function () {
@@ -785,6 +813,7 @@ function removeYearsEL() {
 }
 
 function closeYears() {
+  clickDisableYears();
   ani_YearClose(year);
   setTimeout(function () {
     edu_YEARS.classList.add("hidden");
@@ -845,6 +874,7 @@ function openTermsYear5() {
 
 function openTerms(ret) {
   if (ret == true) {
+    clickDisableTerms();
     ani_TermOpen(term);
     setTimeout(function () {
       btn_edu_terms_year.addEventListener("click", return_TY);
@@ -867,6 +897,18 @@ function openTerms(ret) {
   return;
 }
 
+function openTerms_pass() {
+  clickDisableTerms();
+  ani_TermOpen(term);
+  setTimeout(function () {}, 400);
+  setTimeout(function () {
+    removeAttrTerms();
+    $(btn_edu_terms_year).removeClass("termSelected");
+  }, 800);
+
+  return;
+}
+
 function removeTermsEL() {
   btn_edu_terms_year.removeEventListener("click", return_TY);
   btn_terms_fall.removeEventListener("click", openCoursesTerm1);
@@ -877,6 +919,7 @@ function removeTermsEL() {
 }
 
 function closeTerms() {
+  clickDisableTerms();
   ani_TermClose(term);
   setTimeout(function () {
     edu_TERMS.classList.add("hidden");
@@ -971,8 +1014,19 @@ function return_CT() {
   return;
 }
 
+function return_CT_pass() {
+  removeCoursesEL();
+  closeCourses();
+  setTimeout(function () {
+    openTerms_pass();
+  }, 50);
+  values("return_CT");
+  console.log("return from course to term (pass)");
+  return;
+}
+
 function return_CY() {
-  return_CT();
+  return_CT_pass();
   setTimeout(function () {
     return_TY();
   }, 1300);
