@@ -989,21 +989,28 @@ div:nth-child(2) {
 /* structure */
 .section-portfolio {
   padding-bottom: 13rem;
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio {
   row-gap: 9.6rem;
-  grid-template-rows: 4rem 1fr 1fr 1fr;
+  grid-template-rows: 4rem 1fr;
+  height: max-content;
 }
 
 .portfolio-info {
   grid-row: 1/2;
-  justify-self: center;
+  width: 94rem;
+  text-align: center;
+  /* justify-self: center; */
   height: inherit;
   text-align: center;
   color: #cc3c54;
   font-size: 3.2rem;
   margin-bottom: 0.5rem;
+
+  transform: translate(0%, 30%);
 }
 
 .portfolio-projects {
@@ -1033,6 +1040,7 @@ div:nth-child(2) {
 .portfolio-project .project-skills {
   justify-self: center;
   border: 0.5rem solid #00adb5;
+  background-color: #eee;
   box-sizing: border-box;
   border-radius: 9px;
   padding: 1rem;
@@ -1145,13 +1153,13 @@ div:nth-child(2) {
 .btn-project--next {
   right: 0;
   top: 50%;
-  transform: translate(-100%, -50%);
+  transform: translate(100%, 100%);
 }
 
 .btn-project--prev {
   left: 0;
   top: 50%;
-  transform: translate(100%, -50%);
+  transform: translate(-100%, 100%);
 }
 
 .btn-project--icon {
@@ -1165,9 +1173,38 @@ div:nth-child(2) {
 .btn-project--icon:hover {
   color: #cc3c54;
 }
+.section-portfolio .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.section-portfolio .container .portfolio {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+  position: relative;
+  width: 94rem;
+}
+
+.portfolio-container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 94rem;
+  height: 46rem;
+  position: relative;
+}
+
+.portfolio-container.slide-animated {
+  transition: left 0.5s ease-out;
+}
 
 .portfolio-projects {
-  position: relative;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  width: 94rem;
+  height: 46rem;
 }
 
 .pageID-project {

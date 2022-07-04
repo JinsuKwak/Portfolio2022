@@ -169,16 +169,20 @@
     justify-content: center;
   }
 
+  .portfolio-info {
+    transform: translate(0%, 30%);
+  }
+
   .btn-project--next {
     right: 0;
     top: 50%;
-    transform: translate(+130%, 0%);
+    transform: translate(-200%, 100%);
   }
 
   .btn-project--prev {
     left: 0;
     top: 50%;
-    transform: translate(-130%, 0%);
+    transform: translate(+200%, 100%);
   }
 
   /* .portfolio-projects {
@@ -342,6 +346,29 @@
     row-gap: 4rem;
     height: 84rem;
   }
+  .portfolio-info {
+    width: 50rem;
+    justify-self: center;
+    text-align: center;
+    transform: translate(0%, 35%);
+  }
+  .portfolio-projects {
+    width: 50rem;
+    height: 94rem;
+    justify-self: center;
+    align-items: center;
+  }
+  .portfolio {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 50rem !important;
+  }
+  .portfolio-container {
+    height: 94rem;
+    width: 50rem;
+    justify-self: center;
+  }
 
   .project-1 {
     grid-column: 1/2;
@@ -367,16 +394,16 @@
   .btn-project--next {
     right: 0;
     top: 50%;
-    transform: translate(+300%, 0%);
+    transform: translate(-600%, 120%);
   }
 
   .btn-project--prev {
     left: 0;
     top: 50%;
-    transform: translate(-300%, 0%);
+    transform: translate(600%, 120%);
   }
   .pageID-project {
-    transform: translate(-50%, 500%);
+    transform: translate(-50%, 300%);
   }
 
   /* contact */
@@ -464,6 +491,10 @@
     width: 46rem;
   }
 
+  .section-skills .container {
+    overflow-x: hidden;
+  }
+
   .skills-techskills--myskills {
     padding: 6rem 4rem;
   }
@@ -500,9 +531,27 @@
   }
 
   /* portfolio */
+  .portfolio .container {
+    width: 46rem !important;
+  }
+
+  .portfolio {
+    width: 46rem !important;
+  }
+
+  .portfolio-info {
+    transform: translate(0%, 25%);
+  }
+
+  .portfolio-container {
+    height: 62rem;
+  }
+
   .portfolio-projects {
     grid-template-rows: 28rem 28rem;
-    height: 58rem;
+    height: 62rem;
+    justify-content: center;
+    align-content: center;
   }
 
   .portfolio-project {
@@ -514,9 +563,7 @@
   }
 
   .portfolio-project .project-skills {
-    opacity: 0;
-    pointer-events: none;
-    visibility: none;
+    display: none;
     transform: translateY(-100%);
     z-index: -99;
   }
@@ -524,16 +571,16 @@
   .btn-project--next {
     right: 0;
     top: 50%;
-    transform: translate(+200%, -40%);
+    transform: translate(-350%, 120%);
   }
 
   .btn-project--prev {
     left: 0;
     top: 50%;
-    transform: translate(-200%, -40%);
+    transform: translate(+350%, 120%);
   }
   .pageID-project {
-    transform: translate(-50%, 400%);
+    transform: translate(-50%, 300%);
   }
 
   .skills-toollist {

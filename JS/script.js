@@ -1062,3 +1062,211 @@ $(document).ready(function () {
 function convertRemToPixels(rem) {
   return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
 }
+
+/* fuction rem to px */
+function convertPixelsToRem(px) {
+  return px / parseFloat(getComputedStyle(document.documentElement).fontSize);
+}
+
+/* section portfolio animation */
+/* portfolio slider */
+let sliderWrapper = document.querySelector(
+  ".section-portfolio .container .portfolio"
+);
+let sliderContainer = document.querySelector(".portfolio-container");
+let slides = document.querySelectorAll(".portfolio-projects");
+let slideCount = slides.length;
+let indexCount = 0;
+let currentIndex = 0;
+let topWidth = 0;
+let navNext = document.querySelector(".btn-project--next");
+let navPrev = document.querySelector(".btn-project--prev");
+
+function portfolioAddEL() {
+  navNext.addEventListener("click", currIndexInc);
+  navPrev.addEventListener("click", currIndexDec);
+}
+
+function portfolioRemoveEL() {
+  navNext.removeEventListener("click", currIndexInc);
+  navPrev.removeEventListener("click", currIndexDec);
+}
+
+function currIndexInc() {
+  portfolioRemoveEL();
+  goToSlideIndex(currentIndex + 1);
+}
+
+function currIndexDec() {
+  portfolioRemoveEL();
+  goToSlideIndex(currentIndex - 1);
+}
+
+function calcWidthSlide() {
+  let currentSlides = document.querySelectorAll(".portfolio-projects");
+  topWidth = currentSlides[0].clientWidth;
+  return topWidth;
+}
+
+function displaySlidesLeft(below512) {
+  let unitWidth = calcWidthSlide();
+  let currentSlides = document.querySelectorAll(".portfolio-projects");
+  let newSlideCount = currentSlides.length;
+  // for (let i = 0; i < newSlideCount; i++) {
+  //   currentSlides[i].style.left = convertPixelsToRem(unitWidth) * i + "rem";
+  // }
+
+  if (below512 == true) {
+    for (let i = 0; i < newSlideCount; i++) {
+      currentSlides[i].style.left = 50 * i + "rem";
+    }
+  } else {
+    for (let i = 0; i < newSlideCount; i++) {
+      currentSlides[i].style.left = convertPixelsToRem(unitWidth) * i + "rem";
+    }
+  }
+}
+
+function goToSlideIndex(idx) {
+  sliderContainer.classList.add("slide-animated");
+  let unitWidth = calcWidthSlide();
+  console.log(
+    "convertPixelsToRem(unitWidth): " + convertPixelsToRem(unitWidth)
+  );
+  sliderContainer.style.left = idx * -convertPixelsToRem(unitWidth) + "rem";
+  currentIndex = idx;
+  console.log(currentIndex, slideCount);
+  setTimeout(function () {
+    portfolioAddEL();
+  }, 510);
+  if (currentIndex == slideCount || currentIndex == -slideCount) {
+    setTimeout(function () {
+      sliderContainer.classList.remove("slide-animated");
+      sliderContainer.style.left = "0rem";
+      currentIndex = 0;
+    }, 500);
+
+    setTimeout(function () {
+      sliderContainer.classList.add("slide-animated");
+    }, 600);
+  }
+}
+
+function makeCloneSlide() {
+  slides = document.querySelectorAll(".portfolio-projects");
+  for (var i = 0; i < slideCount; i++) {
+    let cloneSlide = slides[i].cloneNode(true);
+    cloneSlide.classList.add("clone");
+    sliderContainer.appendChild(cloneSlide);
+  }
+  for (var i = slideCount - 1; i >= 0; i--) {
+    let cloneSlide = slides[i].cloneNode(true);
+    cloneSlide.classList.add("clone");
+    sliderContainer.prepend(cloneSlide);
+  }
+  updateContainerWidth();
+  setInitPos();
+  setTimeout(function () {
+    sliderContainer.classList.add("animated");
+  }, 100);
+}
+
+function removeCloneSlide() {
+  let cloneSlide = document.querySelectorAll(".clone");
+  for (let i = 0; i < cloneSlide.length; i++) {
+    $(cloneSlide[i]).remove();
+  }
+}
+
+function updateContainerWidth(below512) {
+  let currentSlides = document.querySelectorAll(".portfolio-projects");
+  let newSlideCount = currentSlides.length;
+  let unitWidth = calcWidthSlide();
+  let newContainerWidth = 0;
+  if (below512 == true) {
+    newContainerWidth = (450 / (slideCount * 3)) * newSlideCount + "rem";
+  } else {
+    newContainerWidth = convertPixelsToRem(unitWidth) * newSlideCount + "rem";
+  }
+  sliderContainer.style.width = newContainerWidth;
+}
+
+function setInitPos() {
+  let unitWidth = calcWidthSlide();
+  let initTransVal = -1 * convertPixelsToRem(unitWidth) * slideCount;
+  sliderContainer.style.transform = "translateX(" + initTransVal + "rem)";
+}
+
+function portfolioInit(restart, below992, below512) {
+  if (restart == true) {
+    removeCloneSlide();
+  }
+
+  currentIndex = 0;
+  console.log("current idx: " + currentIndex);
+  console.log("index count:" + indexCount);
+  console.log("topwidth: " + topWidth);
+  portfolioRemoveEL();
+  makeCloneSlide();
+  updateContainerWidth(below512);
+  displaySlidesLeft(below512);
+  if (below992 == true) {
+    sliderContainer.style.transform =
+      "translateX(" + 450 / (slideCount * 3) + "rem)";
+  } else {
+    console.log("hm");
+    setInitPos();
+  }
+  goToSlideIndex(0);
+  portfolioAddEL();
+}
+
+/* restart every screen-size updated */
+let screenSize1200 = window.matchMedia("screen and (max-width: 75em)");
+let screenSize992 = window.matchMedia("screen and (max-width: 62em)");
+let screenSize800 = window.matchMedia("screen and (max-width: 50em)");
+let screenSize512 = window.matchMedia("screen and (max-width: 46em)");
+
+window.onresize = function () {
+  if (matchMedia("screen and (max-width: 20em)").matches) {
+    portfolioInit(true, true, true);
+  } else if (matchMedia("screen and (max-width: 25em)").matches) {
+    console.log(320);
+    portfolioInit(true, true, true);
+  } else if (matchMedia("screen and (max-width: 32em)").matches) {
+    console.log(512);
+    portfolioInit(true, true, true);
+  } else if (matchMedia("screen and (max-width: 50em)").matches) {
+    console.log(800);
+    portfolioInit(true, true, false);
+  } else if (matchMedia("screen and (max-width: 62em)").matches) {
+    console.log(992);
+    portfolioInit(true, true, false);
+  } else if (matchMedia("screen and (max-width: 75em)").matches) {
+    console.log(1200);
+    portfolioInit(true, false, false);
+  } else {
+    portfolioInit(true, false, false);
+  }
+};
+
+if (matchMedia("screen and (max-width: 20em)").matches) {
+  portfolioInit(false, true, true);
+} else if (matchMedia("screen and (max-width: 25em)").matches) {
+  console.log(320);
+  portfolioInit(true, true, true);
+} else if (matchMedia("screen and (max-width: 32em)").matches) {
+  console.log(512);
+  portfolioInit(false, true, true);
+} else if (matchMedia("screen and (max-width: 50em)").matches) {
+  console.log(800);
+  portfolioInit(false, true, false);
+} else if (matchMedia("screen and (max-width: 62em)").matches) {
+  console.log(992);
+  portfolioInit(false, true, false);
+} else if (matchMedia("screen and (max-width: 75em)").matches) {
+  console.log(1200);
+  portfolioInit(false, false, false);
+} else {
+  portfolioInit(false, false, false);
+}
