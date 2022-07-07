@@ -632,6 +632,12 @@
   .btn-project--prev {
     display: none;
   }
+
+  .btn-project--pageID {
+    width: 2rem;
+    height: 2rem;
+    transform: translate(0%, -100%);
+  }
 }
 
 /**************************/

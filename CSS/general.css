@@ -255,3 +255,7 @@ ion-icon {
 .JavaScript ion-icon {
   color: #fcc419;
 }
+
+.btn-project--pageID.currentPage {
+  background-color: #00adb5;
+}
