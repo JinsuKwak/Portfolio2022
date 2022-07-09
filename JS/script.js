@@ -1068,6 +1068,465 @@ function convertRemToPixels(rem) {
 function convertPixelsToRem(px) {
   return px / parseFloat(getComputedStyle(document.documentElement).fontSize);
 }
+//////////////////////////////////
+/*          PROJECTS            */
+//////////////////////////////////
+const PROJ_1_A = {
+  imgPreview: "../img/projects/1_A/1_A.png",
+  projectName: "Project 1-A",
+  projectDate: "07/08/22 ~ 08/30/22",
+  projectSize: ["ph-users-bold", "Group of 2"],
+  projectSkill: [
+    "<div class='current-skillcontainer grid-col grid--2-cols'>" +
+      "<div class='Skill JavaScript grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>JavaScript</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "<div class='Skill CSS grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>CSS</p>" +
+      "</div>" +
+      "</div>",
+  ],
+  projectImg: [
+    "../img/projects/1_A/1_A.png",
+    "../img/projects/1_A/1_A1.png",
+    "../img/projects/1_A/1_A2.png",
+  ],
+  projectDesc: "Description: This is Project 1_A",
+  projectAdd: "Role: This is an Additional Information of Project 1_A",
+  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
+  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+};
+
+const PROJ_1_B = {
+  imgPreview: "../img/projects/1_B/1_B.png",
+  projectName: "Project 1-B",
+  projectDate: "07/08/22 ~ 08/30/22",
+  projectSize: ["ph-users-three-bold", "Group of 3"],
+  projectSkill: [
+    "<div class='current-skillcontainer grid-col grid--2-cols'>" +
+      "<div class='Skill JavaScript grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>JavaScript</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "<div class='Skill CSS grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>CSS</p>" +
+      "</div>" +
+      "<div class='Skill Python grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>Python</p>" +
+      "</div>" +
+      "</div>",
+  ],
+  projectImg: [
+    "../img/projects/1_B/1_B.png",
+    "../img/projects/1_B/1_B1.png",
+    "../img/projects/1_B/1_B2.png",
+    "../img/projects/1_B/1_B3.png",
+    "../img/projects/1_B/1_B4.png",
+    "../img/projects/1_B/1_B5.png",
+  ],
+  projectDesc: "Description: This is Project 1_B",
+  projectAdd: "Role: This is an Additional Information of Project 1_B",
+  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
+  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+};
+
+const PROJ_1_C = {
+  imgPreview: "../img/projects/1_C/1_C.png",
+  projectName: "Project 1-C",
+  projectDate: "07/08/22 ~ 08/30/22",
+  projectSize: ["ph-users-four-bold", "Group of 4"],
+  projectSkill: [
+    "<div class='current-skillcontainer grid-col grid--2-cols'>" +
+      "<div class='Skill JavaScript grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>JavaScript</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "<div class='Skill Cpp grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>C++</p>" +
+      "</div>" +
+      "</div>",
+  ],
+  projectImg: ["../img/projects/1_C/1_C.png", "../img/projects/1_C/1_C1.png"],
+  projectDesc: "Description: This is Project 1_C",
+  projectAdd: "Role: This is an Additional Information of Project 1_C",
+  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
+  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+};
+
+const PROJ_1_D = {
+  imgPreview: "../img/projects/1_D/1_D.png",
+  projectName: "Project 1-D",
+  projectDate: "07/08/22 ~ 08/30/22",
+  projectSize: ["ph-users-bold", "Group of 2"],
+  projectSkill: [
+    "<div class='current-skillcontainer grid-col grid--2-cols'>" +
+      "<div class='Skill C grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>C</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "</div>",
+  ],
+  projectImg: ["../img/projects/1_D/1_D.png", "../img/projects/1_D/1_D1.png"],
+  projectDesc: "Description: This is Project 1_D",
+  projectAdd: "Role: This is an Additional Information of Project 1_D",
+  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
+  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+};
+
+const PROJ_2_A = {
+  imgPreview: "../img/projects/2_A/2_A.png",
+  projectName: "Project 2-A",
+  projectDate: "07/08/22 ~ 08/30/22",
+  projectSize: ["ph-user", "Individual"],
+  projectSkill: [
+    "<div class='current-skillcontainer grid-col grid--2-cols'>" +
+      "<div class='Skill JavaScript grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>JavaScript</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "</div>",
+  ],
+  projectImg: ["../img/projects/2_A/2_A.png", "../img/projects/2_A/2_A1.png"],
+  projectDesc: "Description: This is Project 2_A",
+  projectAdd: "Role: This is an Additional Information of Project 2_A",
+  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
+  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+};
+
+const PROJ_2_B = {
+  imgPreview: "../img/projects/2_B/2_B.png",
+  projectName: "Project 2-B",
+  projectDate: "07/08/22 ~ 08/30/22",
+  projectSize: ["ph-user", "Individual"],
+  projectSkill: [
+    "<div class='current-skillcontainer grid-col grid--2-cols'>" +
+      "<div class='Skill JavaScript grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>JavaScript</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "</div>",
+  ],
+  projectImg: ["../img/projects/2_B/2_B.png", "../img/projects/2_B/2_B1.png"],
+  projectDesc: "Description: This is Project 2_B",
+  projectAdd: "Role: This is an Additional Information of Project 2_B",
+  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
+  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+};
+
+const PROJ_2_C = {
+  imgPreview: "../img/projects/2_C/2_C.png",
+  projectName: "Project 2-C",
+  projectDate: "07/08/22 ~ 08/30/22",
+  projectSize: ["ph-user", "Individual"],
+  projectSkill: [
+    "<div class='current-skillcontainer grid-col grid--2-cols'>" +
+      "<div class='Skill JavaScript grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>JavaScript</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "</div>",
+  ],
+  projectImg: ["../img/projects/2_C/2_C.png"],
+  projectDesc: "Description: This is Project 2_C",
+  projectAdd: "Role: This is an Additional Information of Project 2_C",
+  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
+  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+};
+
+const PROJ_2_D = {
+  imgPreview: "../img/projects/2_D/2_D.png",
+  projectName: "Project 2-D",
+  projectDate: "07/08/22 ~ 08/30/22",
+  projectSize: ["ph-user", "Individual"],
+  projectSkill: [
+    "<div class='current-skillcontainer grid-col grid--2-cols'>" +
+      "<div class='Skill JavaScript grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>JavaScript</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "</div>",
+  ],
+  projectImg: ["../img/projects/2_D/2_D.png"],
+  projectDesc: "Description: This is Project 2_D",
+  projectAdd: "Role: This is an Additional Information of Project 2_D",
+  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
+  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+};
+
+const PROJ_3_A = {
+  imgPreview: "../img/projects/3_A/3_A.png",
+  projectName: "Project 3-A",
+  projectDate: "07/08/22 ~ 08/30/22",
+  projectSize: ["ph-user", "Individual"],
+  projectSkill: [
+    "<div class='current-skillcontainer grid-col grid--2-cols'>" +
+      "<div class='Skill JavaScript grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>JavaScript</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "</div>",
+  ],
+  projectImg: ["../img/projects/3_A/3_A.png"],
+  projectDesc: "Description: This is Project 3_A",
+  projectAdd: "Role: This is an Additional Information of Project 3_A",
+  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
+  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+};
+
+const PROJ_3_B = {
+  imgPreview: "../img/projects/3_B/3_B.png",
+  projectName: "Project 3-B",
+  projectDate: "07/08/22 ~ 08/30/22",
+  projectSize: ["ph-user", "Individual"],
+  projectSkill: [
+    "<div class='current-skillcontainer grid-col grid--2-cols'>" +
+      "<div class='Skill JavaScript grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>JavaScript</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "</div>",
+  ],
+  projectImg: ["../img/projects/3_B/3_B.png"],
+  projectDesc: "Description: This is Project 3_B",
+  projectAdd: "Role: This is an Additional Information of Project 3_B",
+  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
+  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+};
+
+const PROJ_3_C = {
+  imgPreview: "../img/projects/3_C/3_C.png",
+  projectName: "Project 3-c",
+  projectDate: "07/08/22 ~ 08/30/22",
+  projectSize: ["ph-user", "Individual"],
+  projectSkill: [
+    "<div class='current-skillcontainer grid-col grid--2-cols'>" +
+      "<div class='Skill JavaScript grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>JavaScript</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "</div>",
+  ],
+  projectImg: [
+    "../img/projects/3_C/3_C.png",
+    "../img/projects/3_C/3_C1.png",
+    "../img/projects/3_C/3_C2.png",
+  ],
+  projectDesc: "Description: This is Project 3_C",
+  projectAdd: "Role: This is an Additional Information of Project 3_C",
+  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
+  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+};
+
+const PROJ_3_D = {
+  imgPreview: "../img/projects/3_D/3_D.png",
+  projectName: "Project 3-D",
+  projectDate: "07/08/22 ~ 08/30/22",
+  projectSize: ["ph-user", "Individual"],
+  projectSkill: [
+    "<div class='current-skillcontainer grid-col grid--2-cols'>" +
+      "<div class='Skill JavaScript grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>JavaScript</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<ion-icon name='ellipse'></ion-icon>" +
+      "<p>HTML</p>" +
+      "</div>" +
+      "</div>",
+  ],
+
+  projectImg: ["../img/projects/3_D/3_D.png"],
+  projectDesc:
+    "Description: This is Project 3_D Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio sunt similique ipsa, excepturi voluptate voluptatum placeat deserunt commodi",
+  projectAdd:
+    "Role: This is an Additional Information of Project 3_D Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio sunt similique ipsa, excepturi voluptate voluptatum placeat s is Project 3_D Lorem ipsum ",
+  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
+  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+};
+
+const PROJECTS = [
+  PROJ_1_A,
+  PROJ_1_B,
+  PROJ_1_C,
+  PROJ_1_D,
+  PROJ_2_A,
+  PROJ_2_B,
+  PROJ_2_C,
+  PROJ_2_D,
+  PROJ_3_A,
+  PROJ_3_B,
+  PROJ_3_C,
+  PROJ_3_D,
+];
+
+let previewImg;
+let previewName;
+let previewDate;
+let previewSize;
+let previewSkill;
+let projImgs;
+let projDesc;
+let projAdd;
+let projLinks;
+
+function assignElements() {
+  previewImg = document.querySelector(".current-intro--img"); //css
+  previewName = document.querySelector(".current--name"); //innerText
+  previewDate = document.querySelector(".current--date"); //innerText
+  previewSize = document.querySelector(".current--group"); //innerHTML
+  previewSkill = document.querySelector(".current-skills"); //innerHTML
+  projImgs = document.querySelector(".slides"); //innerHTML
+  projDesc = document.querySelector(".current-desc"); //innerText
+  projAdd = document.querySelector(".current-lesson"); //innerText
+  projLinks = document.querySelector(".current-links"); //innerHTML
+}
+
+function updateCurrentInner(projNum) {
+  let PROJ = PROJECTS[projNum - 1];
+  assignElements();
+  console.log(PROJ.imgPreview);
+  previewImg.style.backgroundImage = "url(" + PROJ.imgPreview + ")";
+  previewName.innerText = PROJ.projectName;
+  previewDate.innerText = PROJ.projectDate;
+  previewSize.innerHTML =
+    "<i class=" +
+    PROJ.projectSize[0] +
+    "></i>" +
+    "<p class='current--group-numbers'>" +
+    PROJ.projectSize[1] +
+    "</p>";
+  previewSkill.innerHTML = PROJ.projectSkill;
+  let slideImgs = "";
+  for (let i = 0; i < PROJ.projectImg.length; i++) {
+    let img = "background-image: url(" + PROJ.projectImg[i] + ")";
+    slideImgs = slideImgs + "<div class='slide' style='" + img + "'></div>";
+  }
+
+  projImgs.innerHTML = slideImgs;
+  projDesc.innerText = PROJ.projectDesc;
+  projAdd.innerText = PROJ.projectAdd;
+
+  if (PROJ.projectDemo[0] == true) {
+    projLinks.innerHTML =
+      "<a class='btn-current-sourcecode' href='" +
+      PROJ.projectCode[3] +
+      "'>" +
+      "<ion-icon name='" +
+      PROJ.projectCode[1] +
+      "'></ion-icon>" +
+      "<p>" +
+      PROJ.projectCode[2] +
+      "</p>" +
+      "</a>" +
+      "<a class='btn-current-demo' href='" +
+      PROJ.projectDemo[3] +
+      "'>" +
+      "<ion-icon name='" +
+      PROJ.projectDemo[1] +
+      "'></ion-icon>" +
+      "<p>" +
+      PROJ.projectDemo[2] +
+      "</p>" +
+      "</a>";
+  } else {
+    projLinks.innerHTML =
+      "<a class='btn-current-sourcecode' href='" +
+      PROJ.projectCode[3] +
+      "'>" +
+      "<ion-icon name='" +
+      PROJ.projectCode[1] +
+      "'></ion-icon>" +
+      "<p>" +
+      PROJ.projectCode[2] +
+      "</p>" +
+      "</a>";
+  }
+}
 
 /* section portfolio animation */
 /* portfolio slider */
@@ -1138,13 +1597,33 @@ function portfolioRemoveEL() {
 }
 
 function currIndexInc() {
-  portfolioRemoveEL();
-  goToSlideIndex(currentIndex + 1, below512);
+  if (currentON == false) {
+    portfolioRemoveEL();
+    goToSlideIndex(currentIndex + 1, below512);
+  } else {
+    currentEnd();
+    if (currentProjectNum >= PROJECTS.length) {
+      currentProjectNum = 1;
+    } else {
+      currentProjectNum++;
+    }
+    currentInit();
+  }
+  console.log(PROJECTS.length);
 }
 
 function currIndexDec() {
-  portfolioRemoveEL();
-  goToSlideIndex(currentIndex - 1, below512);
+  if (currentON == false) {
+    portfolioRemoveEL();
+    goToSlideIndex(currentIndex - 1, below512);
+  } else {
+    if (currentProjectNum <= 1) {
+      currentProjectNum = PROJECTS.length;
+    } else {
+      currentProjectNum--;
+    }
+    currentInit();
+  }
 }
 
 function calcWidthSlide() {
@@ -1274,77 +1753,6 @@ function portfolioInit(restart, below992, below512) {
   portfolioAddEL();
 }
 
-/* restart every screen-size updated */
-let screenSize1200 = window.matchMedia("screen and (max-width: 75em)");
-let screenSize992 = window.matchMedia("screen and (max-width: 62em)");
-let screenSize800 = window.matchMedia("screen and (max-width: 50em)");
-let screenSize512 = window.matchMedia("screen and (max-width: 46em)");
-
-window.onresize = function () {
-  if (matchMedia("screen and (max-width: 20em)").matches) {
-    currentEnd();
-    portfolioInit(true, true, true);
-    below512 = true;
-  } else if (matchMedia("screen and (max-width: 25em)").matches) {
-    currentEnd();
-    console.log(320);
-    below512 = true;
-    portfolioInit(true, true, true);
-  } else if (matchMedia("screen and (max-width: 32em)").matches) {
-    currentEnd();
-    console.log(512);
-    below512 = true;
-    portfolioInit(true, true, true);
-  } else if (matchMedia("screen and (max-width: 50em)").matches) {
-    currentEnd();
-    console.log(800);
-    portfolioInit(true, true, false);
-    below512 = false;
-  } else if (matchMedia("screen and (max-width: 62em)").matches) {
-    currentEnd();
-    console.log(992);
-    portfolioInit(true, true, false);
-    below512 = false;
-  } else if (matchMedia("screen and (max-width: 75em)").matches) {
-    currentEnd();
-    console.log(1200);
-    portfolioInit(true, false, false);
-    below512 = false;
-  } else {
-    currentEnd();
-    portfolioInit(true, false, false);
-    below512 = false;
-  }
-};
-
-if (matchMedia("screen and (max-width: 20em)").matches) {
-  portfolioInit(false, true, true);
-  below512 = true;
-} else if (matchMedia("screen and (max-width: 25em)").matches) {
-  console.log(320);
-  portfolioInit(true, true, true);
-  below512 = true;
-} else if (matchMedia("screen and (max-width: 32em)").matches) {
-  console.log(512);
-  portfolioInit(false, true, true);
-  below512 = true;
-} else if (matchMedia("screen and (max-width: 50em)").matches) {
-  console.log(800);
-  portfolioInit(false, true, false);
-  below512 = false;
-} else if (matchMedia("screen and (max-width: 62em)").matches) {
-  console.log(992);
-  portfolioInit(false, true, false);
-  below512 = false;
-} else if (matchMedia("screen and (max-width: 75em)").matches) {
-  console.log(1200);
-  portfolioInit(false, false, false);
-  below512 = false;
-} else {
-  portfolioInit(false, false, false);
-  below512 = false;
-}
-
 /* current project carousel*/
 let sliderWrapper_current;
 let sliderContainer_current;
@@ -1355,6 +1763,31 @@ let navNext_current;
 let navPrev_current;
 let width;
 let playslide;
+var timer;
+
+function startTimer() {
+  timer = setInterval(function () {
+    // let nextIndex_current = (currentIndex_current + 1) % slideCount_current;
+    currentIndex_current++;
+    goToSlideIndex_current(currentIndex_current);
+    console.log("count");
+  }, 5000);
+  return;
+}
+
+function initTimer() {
+  $(sliderWrapper_current).mouseenter(function () {
+    stopTimer();
+  });
+
+  $(sliderWrapper_current).mouseleave(function () {
+    startTimer();
+  });
+}
+
+function stopTimer() {
+  clearInterval(timer);
+}
 
 function setInitValues_current() {
   sliderWrapper_current = document.querySelector(".slide-wrapper");
@@ -1477,62 +1910,297 @@ function goToSlideIndex_current(idx) {
   return;
 }
 
-/* current project carousel*/
+/* current project */
 let currentProjectNum;
 let project_inner = document.querySelector(".project-container");
 let project_outter = document.querySelector(".portfolio-container");
 let btn_innerClose = document.querySelector(".current-project");
-let project_1_A = document.querySelectorAll(".project-1");
 let allProjects = document.querySelectorAll(".portfolio-projects");
+let currentON = false;
+/* page 1*/
+let project_1_A;
+let project_1_B;
+let project_1_C;
+let project_1_D;
+/* page 2*/
+let project_2_A;
+let project_2_B;
+let project_2_C;
+let project_2_D;
+/* page 3*/
+let project_3_A;
+let project_3_B;
+let project_3_C;
+let project_3_D;
 
 function addElBtn_close() {
   btn_innerClose.addEventListener("click", currentEnd);
   return;
 }
 
-function addElProject_1() {
+function addElProject_1_A() {
+  project_1_A = document.querySelectorAll(".project-1-A");
   for (let i = 0; i < project_1_A.length; i++) {
-    project_1_A[i].addEventListener("click", currentInit_1);
+    project_1_A[i].addEventListener("click", currentInit_1_A);
     console.log("P1 El added");
   }
   return;
 }
 
-function addElAllProject() {
-  addElProject_1();
-  // addElProject_2();
+function addElProject_1_B() {
+  project_1_B = document.querySelectorAll(".project-1-B");
+  for (let i = 0; i < project_1_B.length; i++) {
+    project_1_B[i].addEventListener("click", currentInit_1_B);
+    console.log("P1 El added");
+  }
   return;
 }
 
-// function addElProject_2(){
-//   for(let i = 0; i < project_1_B.length; i++ ){
-//     project_1_B[i].addEventListener("click",currentInit_B)
-//   }
-// }
+function addElProject_1_C() {
+  project_1_C = document.querySelectorAll(".project-1-C");
+  for (let i = 0; i < project_1_C.length; i++) {
+    project_1_C[i].addEventListener("click", currentInit_1_C);
+    console.log("P1 El added");
+  }
+  return;
+}
+
+function addElProject_1_D() {
+  project_1_D = document.querySelectorAll(".project-1-D");
+  for (let i = 0; i < project_1_D.length; i++) {
+    project_1_D[i].addEventListener("click", currentInit_1_D);
+    console.log("P1 El added");
+  }
+  return;
+}
+
+function addElProject_2_A() {
+  project_2_A = document.querySelectorAll(".project-2-A");
+  for (let i = 0; i < project_2_A.length; i++) {
+    project_2_A[i].addEventListener("click", currentInit_2_A);
+    console.log("P2 El added");
+  }
+  return;
+}
+
+function addElProject_2_B() {
+  project_2_B = document.querySelectorAll(".project-2-B");
+  for (let i = 0; i < project_2_B.length; i++) {
+    project_2_B[i].addEventListener("click", currentInit_2_B);
+    console.log("P2 El added");
+  }
+  return;
+}
+
+function addElProject_2_C() {
+  project_2_C = document.querySelectorAll(".project-2-C");
+  for (let i = 0; i < project_2_C.length; i++) {
+    project_2_C[i].addEventListener("click", currentInit_2_C);
+    console.log("P2 El added");
+  }
+  return;
+}
+
+function addElProject_2_D() {
+  project_2_D = document.querySelectorAll(".project-2-D");
+  for (let i = 0; i < project_2_D.length; i++) {
+    project_2_D[i].addEventListener("click", currentInit_2_D);
+    console.log("P2 El added");
+  }
+  return;
+}
+
+function addElProject_3_A() {
+  project_3_A = document.querySelectorAll(".project-3-A");
+  for (let i = 0; i < project_3_A.length; i++) {
+    project_3_A[i].addEventListener("click", currentInit_3_A);
+    console.log("P3 El added");
+  }
+  return;
+}
+
+function addElProject_3_B() {
+  project_3_B = document.querySelectorAll(".project-3-B");
+  for (let i = 0; i < project_3_B.length; i++) {
+    project_3_B[i].addEventListener("click", currentInit_3_B);
+    console.log("P3 El added");
+  }
+  return;
+}
+
+function addElProject_3_C() {
+  project_3_C = document.querySelectorAll(".project-3-C");
+  for (let i = 0; i < project_3_C.length; i++) {
+    project_3_C[i].addEventListener("click", currentInit_3_C);
+    console.log("P3 El added");
+  }
+  return;
+}
+
+function addElProject_3_D() {
+  project_3_D = document.querySelectorAll(".project-3-D");
+  for (let i = 0; i < project_3_D.length; i++) {
+    project_3_D[i].addEventListener("click", currentInit_3_D);
+    console.log("P3 El added");
+  }
+  return;
+}
+
+function addElAllProjects() {
+  addElProject_1_A();
+  addElProject_1_B();
+  addElProject_1_C();
+  addElProject_1_D();
+  addElProject_2_A();
+  addElProject_2_B();
+  addElProject_2_C();
+  addElProject_2_D();
+  addElProject_3_A();
+  addElProject_3_B();
+  addElProject_3_C();
+  addElProject_3_D();
+
+  return;
+}
 
 function removeElAllProjects() {
   for (let i = 0; i < project_1_A.length; i++) {
-    project_1_A[i].removeEventListener("click", currentInit_1);
+    project_1_A[i].removeEventListener("click", currentInit_1_A);
     console.log("P1 El removed");
   }
+  for (let i = 0; i < project_1_B.length; i++) {
+    project_1_B[i].removeEventListener("click", currentInit_1_B);
+    console.log("P1 El removed");
+  }
+  for (let i = 0; i < project_1_C.length; i++) {
+    project_1_C[i].removeEventListener("click", currentInit_1_C);
+    console.log("P1 El removed");
+  }
+  for (let i = 0; i < project_1_D.length; i++) {
+    project_1_D[i].removeEventListener("click", currentInit_1_D);
+    console.log("P1 El removed");
+  }
+  for (let i = 0; i < project_2_A.length; i++) {
+    project_2_A[i].removeEventListener("click", currentInit_2_A);
+    console.log("P2 El removed");
+  }
+  for (let i = 0; i < project_2_B.length; i++) {
+    project_2_B[i].removeEventListener("click", currentInit_2_B);
+    console.log("P2 El removed");
+  }
+  for (let i = 0; i < project_2_C.length; i++) {
+    project_2_C[i].removeEventListener("click", currentInit_2_C);
+    console.log("P2 El removed");
+  }
+  for (let i = 0; i < project_2_D.length; i++) {
+    project_2_D[i].removeEventListener("click", currentInit_2_D);
+    console.log("P2 El removed");
+  }
 
-  // for (let i = 0; i < project_1_B.length; i++) {
-  //   project_1_B[i].removeEventListener("click", currentInit_B);
-  // }
+  for (let i = 0; i < project_3_A.length; i++) {
+    project_3_A[i].removeEventListener("click", currentInit_3_A);
+    console.log("P3 El removed");
+  }
+  for (let i = 0; i < project_3_B.length; i++) {
+    project_3_B[i].removeEventListener("click", currentInit_3_B);
+    console.log("P3 El removed");
+  }
+  for (let i = 0; i < project_3_C.length; i++) {
+    project_3_C[i].removeEventListener("click", currentInit_3_C);
+    console.log("P3 El removed");
+  }
+  for (let i = 0; i < project_3_D.length; i++) {
+    project_3_D[i].removeEventListener("click", currentInit_3_D);
+    console.log("P3 El removed");
+  }
+
   return;
 }
 
-function currentInit_1() {
+function currentInit_1_A() {
   currentProjectNum = 1;
-  currentInit();
+  let currentON = 1;
+  currentInit(true);
+  return;
+}
+function currentInit_1_B() {
+  currentProjectNum = 2;
+  currentInit(true);
+  return;
+}
+function currentInit_1_C() {
+  currentProjectNum = 3;
+  currentInit(true);
+  return;
+}
+function currentInit_1_D() {
+  currentProjectNum = 4;
+  currentInit(true);
+  return;
+}
+function currentInit_2_A() {
+  currentProjectNum = 5;
+  currentInit(true);
+  return;
+}
+function currentInit_2_B() {
+  currentProjectNum = 6;
+  currentInit(true);
+  return;
+}
+function currentInit_2_C() {
+  currentProjectNum = 7;
+  currentInit(true);
+  return;
+}
+function currentInit_2_D() {
+  currentProjectNum = 8;
+  currentInit(true);
+  return;
+}
+function currentInit_3_A() {
+  currentProjectNum = 9;
+  currentInit(true);
+  return;
+}
+function currentInit_3_B() {
+  currentProjectNum = 10;
+  currentInit(true);
+  return;
+}
+function currentInit_3_C() {
+  currentProjectNum = 11;
+  currentInit(true);
+  return;
+}
+function currentInit_3_D() {
+  currentProjectNum = 12;
+  currentInit(true);
   return;
 }
 
-function currentInit() {
+function disableSlideCount() {
+  pageID_1.style.pointerEvents = "none";
+  pageID_2.style.pointerEvents = "none";
+  pageID_3.style.pointerEvents = "none";
+}
+
+function enableSlideCount() {
+  pageID_1.style.pointerEvents = "auto";
+  pageID_2.style.pointerEvents = "auto";
+  pageID_3.style.pointerEvents = "auto";
+}
+
+function currentInit(start) {
+  currentON = true;
+  console.log("current Project NUM: " + currentProjectNum);
   project_outter.classList.add("hidden");
   project_inner.classList.remove("hidden");
+  updateCurrentInner(currentProjectNum);
   // start inner carousel reconstruction
-  currentIndex_current = 0;
+  if (start == true) {
+    currentIndex_current = 0;
+  }
   setInitValues_current();
   currentAddEl();
   calcWidthSlide_current();
@@ -1540,32 +2208,140 @@ function currentInit() {
   displaySlidesLeft_current();
   goToSlideIndex_current(0);
   addElBtn_close();
-  removeElAllProjects();
-  // playSlide = setInterval(function () {
-  //   setTimeout(function () {
-  //     goToSlideIndex_current(currentIndex_current + 1);
-  //   }, 4000);
-  // }, 4000);
-
-  // start inner reconstruction
+  disableSlideCount();
+  initTimer();
 
   return;
 }
 
 function currentEnd() {
+  currentON = false;
   currentIndex_current = 0;
   sliderContainer_current.classList.remove("animated");
   currentRemoveEl();
   btn_innerClose.removeEventListener("click", currentEnd);
   removeCloneSlide_current();
-  addElAllProject();
+  enableSlideCount();
+  stopTimer();
   project_inner.classList.add("hidden");
   project_outter.classList.remove("hidden");
   // clearInterval(playSlide);
   return;
 }
 
-addElAllProject();
+addElAllProjects();
+
+/* restart every screen-size updated */
+let screenSize1200 = window.matchMedia("screen and (max-width: 75em)");
+let screenSize992 = window.matchMedia("screen and (max-width: 62em)");
+let screenSize800 = window.matchMedia("screen and (max-width: 50em)");
+let screenSize512 = window.matchMedia("screen and (max-width: 46em)");
+
+window.onresize = function () {
+  if (matchMedia("screen and (max-width: 20em)").matches) {
+    if (currentON == true) {
+      currentEnd();
+    }
+    removeElAllProjects();
+    portfolioInit(true, true, true);
+    below512 = true;
+    addElAllProjects();
+  } else if (matchMedia("screen and (max-width: 25em)").matches) {
+    if (currentON == true) {
+      currentEnd();
+    }
+    removeElAllProjects();
+    console.log(320);
+    below512 = true;
+    portfolioInit(true, true, true);
+    addElAllProjects();
+  } else if (matchMedia("screen and (max-width: 32em)").matches) {
+    if (currentON == true) {
+      currentEnd();
+    }
+    removeElAllProjects();
+    console.log(512);
+    below512 = true;
+    portfolioInit(true, true, true);
+    addElAllProjects();
+  } else if (matchMedia("screen and (max-width: 50em)").matches) {
+    if (currentON == true) {
+      currentEnd();
+    }
+    removeElAllProjects();
+    console.log(800);
+    portfolioInit(true, true, false);
+    below512 = false;
+    addElAllProjects();
+  } else if (matchMedia("screen and (max-width: 62em)").matches) {
+    if (currentON == true) {
+      currentEnd();
+    }
+    removeElAllProjects();
+    console.log(992);
+    portfolioInit(true, true, false);
+    below512 = false;
+    addElAllProjects();
+  } else if (matchMedia("screen and (max-width: 75em)").matches) {
+    if (currentON == true) {
+      currentEnd();
+    }
+    removeElAllProjects();
+    console.log(1200);
+    portfolioInit(true, false, false);
+    below512 = false;
+    addElAllProjects();
+  } else {
+    if (currentON == true) {
+      currentEnd();
+    }
+    removeElAllProjects();
+    portfolioInit(true, false, false);
+    below512 = false;
+    addElAllProjects();
+  }
+};
+
+if (matchMedia("screen and (max-width: 20em)").matches) {
+  removeElAllProjects();
+  portfolioInit(false, true, true);
+  below512 = true;
+} else if (matchMedia("screen and (max-width: 25em)").matches) {
+  console.log(320);
+  removeElAllProjects();
+  portfolioInit(true, true, true);
+  below512 = true;
+  addElAllProjects();
+} else if (matchMedia("screen and (max-width: 32em)").matches) {
+  console.log(512);
+  removeElAllProjects();
+  portfolioInit(false, true, true);
+  below512 = true;
+  addElAllProjects();
+} else if (matchMedia("screen and (max-width: 50em)").matches) {
+  console.log(800);
+  removeElAllProjects();
+  portfolioInit(false, true, false);
+  below512 = false;
+  addElAllProjects();
+} else if (matchMedia("screen and (max-width: 62em)").matches) {
+  console.log(992);
+  removeElAllProjects();
+  portfolioInit(false, true, false);
+  below512 = false;
+  addElAllProjects();
+} else if (matchMedia("screen and (max-width: 75em)").matches) {
+  console.log(1200);
+  removeElAllProjects();
+  portfolioInit(false, false, false);
+  below512 = false;
+  addElAllProjects();
+} else {
+  removeElAllProjects();
+  portfolioInit(false, false, false);
+  below512 = false;
+  addElAllProjects();
+}
 /* section contact hover animation */
 let btn_send = document.querySelector(".btn-contact--send");
 let cont_box = document.querySelector(

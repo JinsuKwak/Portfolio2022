@@ -999,7 +999,7 @@ div:nth-child(2) {
 .portfolio {
   row-gap: 9.6rem;
   grid-template-rows: 4rem 1fr;
-  height: max-content;
+  height: fit-content;
 }
 
 .portfolio-info {
@@ -1022,16 +1022,27 @@ div:nth-child(2) {
   justify-content: center;
 }
 
-.project-1 {
+.project-3-A,
+.project-2-A,
+.project-1-A {
   grid-column: 1/2;
 }
-.project-2 {
+
+.project-3-B,
+.project-2-B,
+.project-1-B {
   grid-column: 2/3;
 }
-.project-3 {
+
+.project-3-C,
+.project-2-C,
+.project-1-C {
   grid-column: 3/4;
 }
-.project-4 {
+
+.project-3-D,
+.project-2-D,
+.project-1-D {
   grid-column: 4/5;
 }
 
@@ -1170,15 +1181,17 @@ div:nth-child(2) {
   color: #cc3c54;
 }
 .section-portfolio .container {
+  height: fit-content;
   position: relative;
   display: flex;
   justify-content: center;
 }
 
 .section-portfolio .container .portfolio {
-  overflow-x: hidden;
-  overflow-y: visible !important;
+  height: fit-content;
+  /* overflow-y: visible !important; */
   position: relative;
+  overflow-x: hidden;
   width: 94rem;
 }
 
@@ -1268,6 +1281,7 @@ div:nth-child(2) {
 .project-container {
   height: 46rem;
   display: grid;
+  justify-self: center;
   justify-content: center;
   align-content: center;
 }
@@ -1288,7 +1302,7 @@ div:nth-child(2) {
   border: none;
 
   border-radius: 9px;
-  padding: 1rem;
+  padding: 1.3rem;
   row-gap: 2rem;
   width: 21rem;
   transition: all 0.3s;
@@ -1317,6 +1331,7 @@ div:nth-child(2) {
   height: 11.5rem;
   border-radius: 4px;
   overflow: hidden;
+  background-size: cover;
   background-color: #999;
 }
 
@@ -1536,23 +1551,27 @@ div:nth-child(2) {
   );
   opacity: 1;
 }
-/* .btn-current-next:hover {
-  background-image: linear-gradient(
-    to left,
-    rgb(0, 0, 0, 0.3) 0%,
-    rgba(150, 150, 150, 0.1) 100%
-  );
-  opacity: 1;
+
+.slide {
+  background-size: cover;
 }
 
-.btn-current-prev:hover {
-  background-image: linear-gradient(
-    to right,
-    rgb(0, 0, 0, 0.3) 0%,
-    rgba(150, 150, 150, 0.1) 100%
-  );
-  opacity: 1; 
-}/
+.current-info {
+  color: #222;
+}
+.current-links a {
+  color: #222;
+  text-decoration: none;
+}
+
+.btn-current-sourcecode:hover,
+.btn-current-demo:hover {
+  color: #fff;
+  background-image: linear-gradient(120deg, #f77062 0%, #fe5196 100%);
+  border: none;
+  transition: all 0.3s;
+}
+
 /**************************/
 /*     Section Contact    */
 /**************************/

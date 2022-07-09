@@ -253,7 +253,11 @@ ion-icon {
   color: #7950f2;
 }
 .JavaScript ion-icon {
-  color: #fcc419;
+  color: #fcc419 !important;
+}
+
+.WIP ion-icon {
+  color: #00adb5;
 }
 
 .btn-project--pageID.currentPage {
