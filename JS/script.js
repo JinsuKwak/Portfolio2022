@@ -2243,62 +2243,76 @@ window.onresize = function () {
       currentEnd();
     }
     removeElAllProjects();
+    removeTouchElPortfolio_m();
     portfolioInit(true, true, true);
     below512 = true;
     addElAllProjects();
+    addTouchElPortfolio_m();
   } else if (matchMedia("screen and (max-width: 25em)").matches) {
     if (currentON == true) {
       currentEnd();
     }
     removeElAllProjects();
+    removeTouchElPortfolio_m();
     console.log(320);
     below512 = true;
     portfolioInit(true, true, true);
     addElAllProjects();
+    addTouchElPortfolio_m();
   } else if (matchMedia("screen and (max-width: 32em)").matches) {
     if (currentON == true) {
       currentEnd();
     }
     removeElAllProjects();
+    removeTouchElPortfolio_m();
     console.log(512);
     below512 = true;
     portfolioInit(true, true, true);
     addElAllProjects();
+    addTouchElPortfolio_m();
   } else if (matchMedia("screen and (max-width: 50em)").matches) {
     if (currentON == true) {
       currentEnd();
     }
     removeElAllProjects();
+    removeTouchElPortfolio_m();
     console.log(800);
     portfolioInit(true, true, false);
     below512 = false;
     addElAllProjects();
+    addTouchElPortfolio_m();
   } else if (matchMedia("screen and (max-width: 62em)").matches) {
     if (currentON == true) {
       currentEnd();
     }
     removeElAllProjects();
+    removeTouchElPortfolio_m();
     console.log(992);
     portfolioInit(true, true, false);
     below512 = false;
     addElAllProjects();
+    addTouchElPortfolio_m();
   } else if (matchMedia("screen and (max-width: 75em)").matches) {
     if (currentON == true) {
       currentEnd();
     }
     removeElAllProjects();
+    removeTouchElPortfolio_m();
     console.log(1200);
     portfolioInit(true, false, false);
     below512 = false;
     addElAllProjects();
+    addTouchElPortfolio_m();
   } else {
     if (currentON == true) {
       currentEnd();
     }
     removeElAllProjects();
+    removeTouchElPortfolio_m();
     portfolioInit(true, false, false);
     below512 = false;
     addElAllProjects();
+    addTouchElPortfolio_m();
   }
 };
 
@@ -2306,42 +2320,84 @@ if (matchMedia("screen and (max-width: 20em)").matches) {
   removeElAllProjects();
   portfolioInit(false, true, true);
   below512 = true;
+  addTouchElPortfolio_m();
 } else if (matchMedia("screen and (max-width: 25em)").matches) {
   console.log(320);
   removeElAllProjects();
   portfolioInit(true, true, true);
   below512 = true;
   addElAllProjects();
+  addTouchElPortfolio_m();
 } else if (matchMedia("screen and (max-width: 32em)").matches) {
   console.log(512);
   removeElAllProjects();
   portfolioInit(false, true, true);
   below512 = true;
   addElAllProjects();
+  addTouchElPortfolio_m();
 } else if (matchMedia("screen and (max-width: 50em)").matches) {
   console.log(800);
   removeElAllProjects();
   portfolioInit(false, true, false);
   below512 = false;
   addElAllProjects();
+  addTouchElPortfolio_m();
 } else if (matchMedia("screen and (max-width: 62em)").matches) {
   console.log(992);
   removeElAllProjects();
   portfolioInit(false, true, false);
   below512 = false;
   addElAllProjects();
+  addTouchElPortfolio_m();
 } else if (matchMedia("screen and (max-width: 75em)").matches) {
   console.log(1200);
   removeElAllProjects();
   portfolioInit(false, false, false);
   below512 = false;
   addElAllProjects();
+  addTouchElPortfolio_m();
 } else {
   removeElAllProjects();
   portfolioInit(false, false, false);
   below512 = false;
   addElAllProjects();
+  addTouchElPortfolio_m();
 }
+
+/* mobile slider touch evets */
+
+let start_x, end_x;
+
+function addTouchElPortfolio_m() {
+  let portfolio_m = document.querySelector(".portfolio");
+  portfolio_m.addEventListener("touchstart", touch_start);
+  portfolio_m.addEventListener("touchend", touch_end);
+  console.log("addELlll");
+}
+
+function removeTouchElPortfolio_m() {
+  let portfolio_m = document.querySelector(".portfolio");
+  portfolio_m.removeEventListener("touchstart", touch_start);
+  portfolio_m.removeEventListener("touchend", touch_end);
+
+  console.log("delete Ellll");
+}
+
+function touch_start(event) {
+  start_x = event.touches[0].pageX;
+}
+
+function touch_end(event) {
+  end_x = event.changedTouches[0].pageX;
+  if (start_x + 40 < end_x) {
+    currIndexDec();
+  } else if (start_x - 40 > end_x) {
+    currIndexInc();
+  } else {
+    console.log("ELSE!");
+  }
+}
+
 /* section contact hover animation */
 let btn_send = document.querySelector(".btn-contact--send");
 let cont_box = document.querySelector(
