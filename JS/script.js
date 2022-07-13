@@ -1763,7 +1763,7 @@ let navNext_current;
 let navPrev_current;
 let width;
 let playslide;
-var timer;
+let timer;
 
 function startTimer() {
   timer = setInterval(function () {
@@ -1772,21 +1772,25 @@ function startTimer() {
     goToSlideIndex_current(currentIndex_current);
     console.log("count");
   }, 5000);
+  console.log("start!");
   return;
 }
 
 function initTimer() {
-  $(sliderWrapper_current).mouseenter(function () {
-    stopTimer();
-  });
-
-  $(sliderWrapper_current).mouseleave(function () {
-    startTimer();
-  });
+  sliderWrapper_current.addEventListener("mouseenter", stopTimer);
+  sliderWrapper_current.addEventListener("mouseleave", startTimer);
+  return;
+}
+function removeTimer() {
+  sliderWrapper_current.removeEventListener("mouseenter", stopTimer);
+  sliderWrapper_current.removeEventListener("mouseleave", startTimer);
+  return;
 }
 
 function stopTimer() {
   clearInterval(timer);
+  console.log("stopped");
+  return;
 }
 
 function setInitValues_current() {
@@ -2209,6 +2213,7 @@ function currentInit(start) {
   goToSlideIndex_current(0);
   addElBtn_close();
   disableSlideCount();
+  startTimer();
   initTimer();
 
   return;
@@ -2223,6 +2228,7 @@ function currentEnd() {
   removeCloneSlide_current();
   enableSlideCount();
   stopTimer();
+  removeTimer(); //newadded
   project_inner.classList.add("hidden");
   project_outter.classList.remove("hidden");
   // clearInterval(playSlide);
