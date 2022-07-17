@@ -23,6 +23,7 @@
 .section-intro {
   height: 100vh;
   width: 100vw;
+  max-width: 100vw;
   background-image: linear-gradient(
       to bottom,
       rgba(57, 62, 70, 0.1),
@@ -1244,38 +1245,98 @@ div:nth-child(2) {
 /*     My Projects        */
 /**************************/
 
-/* Project A */
-/* Project A 1st layout*/
-.project-1 .project-skills .JavaScript {
-  grid-column: 1/2;
+/* Project 1-A */
+/* Project 1-A 1st layout*/
+.project-1-A .project-intro .project-intro--img {
+  background-image: url(../img/projects/1_A/1_A_1.png);
+  background-size: cover;
+}
+.project-1-A .project-skills .project-skillcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 1.8rem;
 }
 
-.project-1 .project-skills .HTML {
-  grid-column: 1/2;
+.project-1-A .project-skills .Java {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.project-1-A .project-skills .SQL {
+  grid-column: 2/6;
+  grid-row: 1/2;
+}
+
+.project-1-A.project-skills .GUI {
+  grid-column: 1/3;
   grid-row: 2/3;
 }
 
-.project-1 .project-skills .CSS {
-  grid-column: 2/3;
+/* Project 1-B */
+/* Project 1-B 1st layout*/
+.project-1-B .project-intro .project-intro--img {
+  background-image: url(../img/projects/1_B/1_B_2.png);
+  background-size: cover;
+}
+.project-1-A .project-skills .project-skillcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 2.4rem;
+}
+
+.project-1-A .project-skills .Java {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.project-1-A .project-skills .SQL {
+  grid-column: 2/6;
+  grid-row: 1/2;
+}
+
+.project-1-A.project-skills .GUI {
+  grid-column: 1/3;
   grid-row: 2/3;
 }
-/* Project A 2nd layout*/
-/* Project A 3rd layout*/
 
-/* Project B */
-/* Project B 1st layout*/
-/* Project B 2nd layout*/
-/* Project B 3rd layout*/
+/* Project 1-C */
+/* Project 1-C 1st layout*/
+.project-1-C .project-intro .project-intro--img {
+  background-image: url(../img/projects/1_C/1_C_2.png);
+  background-size: cover;
+}
 
-/* Project C */
-/* Project C 1st layout*/
-/* Project C 2nd layout*/
-/* Project C 3rd layout*/
+/* Project 1-D */
+/* Project 1-D 1st layout*/
+.project-1-D .project-intro .project-intro--img {
+  background-image: url(../img/projects/1_C/1_C_2.png);
+  background-size: cover;
+}
 
-/* Project D */
-/* Project D 1st layout*/
-/* Project D 2nd layout*/
-/* Project D 3rd layout*/
+/* Project 2-A */
+/* Project 2-A 1st layout*/
+.project-2-A .project-intro .project-intro--img {
+  background-image: url(../img/projects/1_C/1_C_2.png);
+  background-size: cover;
+}
+/* Project 2-B */
+/* Project 2-B 1st layout*/
+.project-2-B .project-intro .project-intro--img {
+  background-image: url(../img/projects/1_C/1_C_2.png);
+  background-size: cover;
+}
+/* Project 2-C */
+/* Project 2-C 1st layout*/
+.project-2-C .project-intro .project-intro--img {
+  background-image: url(../img/projects/1_C/1_C_2.png);
+  background-size: cover;
+}
+/* Project 2-D */
+/* Project 2-D 1st layout*/
+.project-2-D .project-intro .project-intro--img {
+  background-image: url(../img/projects/1_C/1_C_2.png);
+  background-size: cover;
+}
 
 /* current project*/
 .project-container {
@@ -1691,7 +1752,7 @@ div:nth-child(2) {
   background-color: #00adb5;
   border-radius: 8px;
 
-  transform: translate(0, -100%);
+  transform: translate(0, -400%);
   transition: all 0.3s;
 }
 
@@ -1801,4 +1862,60 @@ div:nth-child(2) {
   border: none !important;
   box-shadow: 1.4rem 2.2rem rgba(195, 60, 85, 0.4);
   /* transition: all 0s; */
+}
+
+.current-intro--img,
+.project-intro--img {
+  overflow: hidden;
+  background-position: center;
+}
+
+.current-skillcontainer,
+.project-skillcontainer {
+  row-gap: 0.8rem;
+}
+
+.current-lesson,
+.current-desc {
+  font-size: 1.4rem;
+}
+
+.slide {
+  background-position: center;
+}
+
+.current-left {
+  position: relative;
+}
+
+.modal-open {
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  right: 0;
+  top: 50%;
+  width: 5.4rem;
+  height: 5.4rem;
+  transform: translate(80%, 132%);
+}
+
+.modal-open i {
+  opacity: 0.8;
+  color: #222;
+  font-size: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.modal-open:hover > i {
+  opacity: 1;
+  color: #cc3c54;
+}
+
+.space {
+  position: absolute;
+  width: 35.4rem;
+  height: 21.43rem;
 }

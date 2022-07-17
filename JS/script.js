@@ -1,4 +1,3 @@
-// gsap.registerPlugin(MotionPathPlugin);
 /* Sticky navigaion */
 const topDecoEl = document.querySelector(".sticky-wrapper");
 let topWrapper = (topDecoEl.clientHeight + convertRemToPixels(1)) * -1;
@@ -1072,78 +1071,104 @@ function convertPixelsToRem(px) {
 /*          PROJECTS            */
 //////////////////////////////////
 const PROJ_1_A = {
-  imgPreview: "../img/projects/1_A/1_A.png",
-  projectName: "Project 1-A",
-  projectDate: "07/08/22 ~ 08/30/22",
-  projectSize: ["ph-users-bold", "Group of 2"],
+  imgPreview: "img/projects/1_A/1_A_1.png",
+  projectName: "FoodBank 409",
+  projectDate: "03/29/22 ~ 04/18/22",
+  projectSize: ["ph-users-three-bold", "Group of 3"],
   projectSkill: [
-    "<div class='current-skillcontainer grid-col grid--2-cols'>" +
-      "<div class='Skill JavaScript grid-col grid--2-cols'>" +
+    "<div class='current-skillcontainer grid-col grid--2-cols' style='grid-template-columns: 1fr 1fr 1fr 1fr 1fr; column-gap: 2.4rem'>" +
+      "<div class='Skill Java grid-col grid--2-cols' style='grid-column: 1/2  grid-row: 1/2'>" +
       "<ion-icon name='ellipse'></ion-icon>" +
-      "<p>JavaScript</p>" +
+      "<p>Java</p>" +
       "</div>" +
-      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<div class='Skill SQL grid-col grid--2-cols' style='grid-column: 2/3;  grid-row: 1/2'> " +
       "<ion-icon name='ellipse'></ion-icon>" +
-      "<p>HTML</p>" +
+      "<p>SQL</p>" +
       "</div>" +
-      "<div class='Skill CSS grid-col grid--2-cols'>" +
+      "<div class='Skill GUI grid-col grid--2-cols' style='grid-column: 1/4;  grid-row: 2/3'>" +
       "<ion-icon name='ellipse'></ion-icon>" +
-      "<p>CSS</p>" +
+      "<p>GUI</p>" +
       "</div>" +
       "</div>",
   ],
   projectImg: [
-    "../img/projects/1_A/1_A.png",
-    "../img/projects/1_A/1_A1.png",
-    "../img/projects/1_A/1_A2.png",
+    "img/projects/1_A/1_A_1.png",
+    "img/projects/1_A/1_A_1_1.png",
+    "img/projects/1_A/1_A_1_2.png",
+    "img/projects/1_A/1_A_2.png",
+    "img/projects/1_A/1_A_3.png",
+    "img/projects/1_A/1_A_4.png",
+    "img/projects/1_A/1_A_5.png",
+    "img/projects/1_A/1_A_6.png",
+    "img/projects/1_A/1_A_7.png",
+    "img/projects/1_A/1_A_8.png",
+    "img/projects/1_A/1_A_9.png",
+    "img/projects/1_A/1_A_10.png",
+    "img/projects/1_A/1_A_11.png",
   ],
-  projectDesc: "Description: This is Project 1_A",
-  projectAdd: "Role: This is an Additional Information of Project 1_A",
-  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
-  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+  projectDesc:
+    "Description: FoodBank 409 provide support for people who are experiencing food insecurity. The program create most efficient hampers of nutritionally balanced food to address the needs of clients within the current inventory.",
+  projectAdd:
+    "Lesson Learned: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas modi tenetur illo reprehenderit voluptatibus totam at iure eum quibusdam commodi magnam, amet accusantium ullam sed a, suscipit neque velit obcaecati.",
+  projectCode: [
+    true,
+    "code-slash",
+    "CODE",
+    "https://github.com/sinapordanesh/Food-Bank-Manager-",
+  ],
+  projectDemo: [true, "logo-youtube", "DEMO", "https://youtu.be/C3hJfNPp_wA"],
 };
 
 const PROJ_1_B = {
-  imgPreview: "../img/projects/1_B/1_B.png",
-  projectName: "Project 1-B",
-  projectDate: "07/08/22 ~ 08/30/22",
-  projectSize: ["ph-users-three-bold", "Group of 3"],
+  imgPreview: "img/projects/1_B/1_B_2.png",
+  projectName: "My Portfolio",
+  projectDate: "06/15/22 ~ 07/09/22",
+  projectSize: ["ph-user-bold", "Individual"],
   projectSkill: [
     "<div class='current-skillcontainer grid-col grid--2-cols'>" +
-      "<div class='Skill JavaScript grid-col grid--2-cols'>" +
-      "<ion-icon name='ellipse'></ion-icon>" +
-      "<p>JavaScript</p>" +
-      "</div>" +
-      "<div class='Skill HTML grid-col grid--2-cols'>" +
+      "<div class='Skill HTML grid-col grid--2-cols' style='grid-column: 1/2  grid-row: 1/2'>" +
       "<ion-icon name='ellipse'></ion-icon>" +
       "<p>HTML</p>" +
       "</div>" +
-      "<div class='Skill CSS grid-col grid--2-cols'>" +
+      "<div class='Skill CSS grid-col grid--2-cols' style='grid-column: 2/3  grid-row: 1/2'>" +
       "<ion-icon name='ellipse'></ion-icon>" +
       "<p>CSS</p>" +
       "</div>" +
-      "<div class='Skill Python grid-col grid--2-cols'>" +
+      "<div class='Skill JavaScript grid-col grid--2-cols' style='grid-column: 1/2  grid-row: 2/3'>" +
       "<ion-icon name='ellipse'></ion-icon>" +
-      "<p>Python</p>" +
+      "<p>JavaScript</p>" +
       "</div>" +
       "</div>",
   ],
   projectImg: [
-    "../img/projects/1_B/1_B.png",
-    "../img/projects/1_B/1_B1.png",
-    "../img/projects/1_B/1_B2.png",
-    "../img/projects/1_B/1_B3.png",
-    "../img/projects/1_B/1_B4.png",
-    "../img/projects/1_B/1_B5.png",
+    "img/projects/1_B/1_B_1.png",
+    "img/projects/1_B/1_B_2.png",
+    "img/projects/1_B/1_B_3.png",
+    "img/projects/1_B/1_B_4.png",
+    "img/projects/1_B/1_B_5.png",
+    "img/projects/1_B/1_B_5_1.png",
+    "img/projects/1_B/1_B_6.png",
   ],
-  projectDesc: "Description: This is Project 1_B",
-  projectAdd: "Role: This is an Additional Information of Project 1_B",
-  projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
-  projectDemo: [true, "logo-youtube", "DEMO", "https://www.youtube.com/"],
+  projectDesc:
+    "Description: A personal portfolio website for employers to take a glance at. Most of this web site are made with HTML, CSS and Vanilla JS ",
+  projectAdd:
+    "Lesson Learned: This was my first web project, throughout this project, I have learned about basic web/network structures and improved my HTML, CSS and Javascript skills  ",
+  projectCode: [
+    true,
+    "code-slash",
+    "CODE",
+    "https://github.com/JinsuKwak/Portfolio2022",
+  ],
+  projectDemo: [
+    true,
+    "link",
+    "LINK",
+    "https://jinsukwak.github.io/Portfolio2022/",
+  ],
 };
 
 const PROJ_1_C = {
-  imgPreview: "../img/projects/1_C/1_C.png",
+  imgPreview: "img/projects/1_C/1_C_2.png",
   projectName: "Project 1-C",
   projectDate: "07/08/22 ~ 08/30/22",
   projectSize: ["ph-users-four-bold", "Group of 4"],
@@ -1163,7 +1188,7 @@ const PROJ_1_C = {
       "</div>" +
       "</div>",
   ],
-  projectImg: ["../img/projects/1_C/1_C.png", "../img/projects/1_C/1_C1.png"],
+  projectImg: ["img/projects/1_C/1_C_1.png", "img/projects/1_C/1_C_2.png"],
   projectDesc: "Description: This is Project 1_C",
   projectAdd: "Role: This is an Additional Information of Project 1_C",
   projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
@@ -1171,7 +1196,7 @@ const PROJ_1_C = {
 };
 
 const PROJ_1_D = {
-  imgPreview: "../img/projects/1_D/1_D.png",
+  imgPreview: "img/projects/1_C/1_C_2.png",
   projectName: "Project 1-D",
   projectDate: "07/08/22 ~ 08/30/22",
   projectSize: ["ph-users-bold", "Group of 2"],
@@ -1191,7 +1216,11 @@ const PROJ_1_D = {
       "</div>" +
       "</div>",
   ],
-  projectImg: ["../img/projects/1_D/1_D.png", "../img/projects/1_D/1_D1.png"],
+  projectImg: [
+    "img/projects/1_C/1_C_2.png",
+    "img/projects/1_D/1_D.png",
+    "img/projects/1_D/1_D1.png",
+  ],
   projectDesc: "Description: This is Project 1_D",
   projectAdd: "Role: This is an Additional Information of Project 1_D",
   projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
@@ -1199,7 +1228,7 @@ const PROJ_1_D = {
 };
 
 const PROJ_2_A = {
-  imgPreview: "../img/projects/2_A/2_A.png",
+  imgPreview: "img/projects/2_A/2_A.png",
   projectName: "Project 2-A",
   projectDate: "07/08/22 ~ 08/30/22",
   projectSize: ["ph-user", "Individual"],
@@ -1219,7 +1248,7 @@ const PROJ_2_A = {
       "</div>" +
       "</div>",
   ],
-  projectImg: ["../img/projects/2_A/2_A.png", "../img/projects/2_A/2_A1.png"],
+  projectImg: ["img/projects/2_A/2_A.png", "img/projects/2_A/2_A1.png"],
   projectDesc: "Description: This is Project 2_A",
   projectAdd: "Role: This is an Additional Information of Project 2_A",
   projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
@@ -1227,7 +1256,7 @@ const PROJ_2_A = {
 };
 
 const PROJ_2_B = {
-  imgPreview: "../img/projects/2_B/2_B.png",
+  imgPreview: "img/projects/2_B/2_B.png",
   projectName: "Project 2-B",
   projectDate: "07/08/22 ~ 08/30/22",
   projectSize: ["ph-user", "Individual"],
@@ -1247,7 +1276,7 @@ const PROJ_2_B = {
       "</div>" +
       "</div>",
   ],
-  projectImg: ["../img/projects/2_B/2_B.png", "../img/projects/2_B/2_B1.png"],
+  projectImg: ["img/projects/2_B/2_B.png", "img/projects/2_B/2_B1.png"],
   projectDesc: "Description: This is Project 2_B",
   projectAdd: "Role: This is an Additional Information of Project 2_B",
   projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
@@ -1255,7 +1284,7 @@ const PROJ_2_B = {
 };
 
 const PROJ_2_C = {
-  imgPreview: "../img/projects/2_C/2_C.png",
+  imgPreview: "img/projects/2_C/2_C.png",
   projectName: "Project 2-C",
   projectDate: "07/08/22 ~ 08/30/22",
   projectSize: ["ph-user", "Individual"],
@@ -1275,7 +1304,7 @@ const PROJ_2_C = {
       "</div>" +
       "</div>",
   ],
-  projectImg: ["../img/projects/2_C/2_C.png"],
+  projectImg: ["img/projects/2_C/2_C.png"],
   projectDesc: "Description: This is Project 2_C",
   projectAdd: "Role: This is an Additional Information of Project 2_C",
   projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
@@ -1283,7 +1312,7 @@ const PROJ_2_C = {
 };
 
 const PROJ_2_D = {
-  imgPreview: "../img/projects/2_D/2_D.png",
+  imgPreview: "img/projects/2_D/2_D.png",
   projectName: "Project 2-D",
   projectDate: "07/08/22 ~ 08/30/22",
   projectSize: ["ph-user", "Individual"],
@@ -1303,7 +1332,7 @@ const PROJ_2_D = {
       "</div>" +
       "</div>",
   ],
-  projectImg: ["../img/projects/2_D/2_D.png"],
+  projectImg: ["img/projects/2_D/2_D.png"],
   projectDesc: "Description: This is Project 2_D",
   projectAdd: "Role: This is an Additional Information of Project 2_D",
   projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
@@ -1311,7 +1340,7 @@ const PROJ_2_D = {
 };
 
 const PROJ_3_A = {
-  imgPreview: "../img/projects/3_A/3_A.png",
+  imgPreview: "img/projects/3_A/3_A.png",
   projectName: "Project 3-A",
   projectDate: "07/08/22 ~ 08/30/22",
   projectSize: ["ph-user", "Individual"],
@@ -1331,7 +1360,7 @@ const PROJ_3_A = {
       "</div>" +
       "</div>",
   ],
-  projectImg: ["../img/projects/3_A/3_A.png"],
+  projectImg: ["img/projects/3_A/3_A.png"],
   projectDesc: "Description: This is Project 3_A",
   projectAdd: "Role: This is an Additional Information of Project 3_A",
   projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
@@ -1339,7 +1368,7 @@ const PROJ_3_A = {
 };
 
 const PROJ_3_B = {
-  imgPreview: "../img/projects/3_B/3_B.png",
+  imgPreview: "img/projects/3_B/3_B.png",
   projectName: "Project 3-B",
   projectDate: "07/08/22 ~ 08/30/22",
   projectSize: ["ph-user", "Individual"],
@@ -1359,7 +1388,7 @@ const PROJ_3_B = {
       "</div>" +
       "</div>",
   ],
-  projectImg: ["../img/projects/3_B/3_B.png"],
+  projectImg: ["img/projects/3_B/3_B.png"],
   projectDesc: "Description: This is Project 3_B",
   projectAdd: "Role: This is an Additional Information of Project 3_B",
   projectCode: [true, "code-slash", "CODE", "https://www.google.ca/"],
@@ -1367,7 +1396,7 @@ const PROJ_3_B = {
 };
 
 const PROJ_3_C = {
-  imgPreview: "../img/projects/3_C/3_C.png",
+  imgPreview: "img/projects/3_C/3_C.png",
   projectName: "Project 3-c",
   projectDate: "07/08/22 ~ 08/30/22",
   projectSize: ["ph-user", "Individual"],
@@ -1388,9 +1417,9 @@ const PROJ_3_C = {
       "</div>",
   ],
   projectImg: [
-    "../img/projects/3_C/3_C.png",
-    "../img/projects/3_C/3_C1.png",
-    "../img/projects/3_C/3_C2.png",
+    "img/projects/3_C/3_C.png",
+    "img/projects/3_C/3_C1.png",
+    "img/projects/3_C/3_C2.png",
   ],
   projectDesc: "Description: This is Project 3_C",
   projectAdd: "Role: This is an Additional Information of Project 3_C",
@@ -1399,7 +1428,7 @@ const PROJ_3_C = {
 };
 
 const PROJ_3_D = {
-  imgPreview: "../img/projects/3_D/3_D.png",
+  imgPreview: "img/projects/3_D/3_D.png",
   projectName: "Project 3-D",
   projectDate: "07/08/22 ~ 08/30/22",
   projectSize: ["ph-user", "Individual"],
@@ -1420,7 +1449,7 @@ const PROJ_3_D = {
       "</div>",
   ],
 
-  projectImg: ["../img/projects/3_D/3_D.png"],
+  projectImg: ["img/projects/3_D/3_D.png"],
   projectDesc:
     "Description: This is Project 3_D Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio sunt similique ipsa, excepturi voluptate voluptatum placeat deserunt commodi",
   projectAdd:
@@ -1617,6 +1646,7 @@ function currIndexDec() {
     portfolioRemoveEL();
     goToSlideIndex(currentIndex - 1, below512);
   } else {
+    currentEnd();
     if (currentProjectNum <= 1) {
       currentProjectNum = PROJECTS.length;
     } else {
@@ -1636,9 +1666,6 @@ function displaySlidesLeft(below512) {
   let unitWidth = calcWidthSlide();
   let currentSlides = document.querySelectorAll(".portfolio-projects");
   let newSlideCount = currentSlides.length;
-  // for (let i = 0; i < newSlideCount; i++) {
-  //   currentSlides[i].style.left = convertPixelsToRem(unitWidth) * i + "rem";
-  // }
 
   if (below512 == true) {
     for (let i = 0; i < newSlideCount; i++) {
@@ -1769,6 +1796,11 @@ function startTimer() {
   timer = setInterval(function () {
     // let nextIndex_current = (currentIndex_current + 1) % slideCount_current;
     currentIndex_current++;
+    if (realIdx >= PROJECTS[currentProjectNum - 1].projectImg.length - 1) {
+      realIdx = 0;
+    } else {
+      realIdx++;
+    }
     goToSlideIndex_current(currentIndex_current);
     console.log("count");
   }, 5000);
@@ -1820,12 +1852,22 @@ function currentRemoveEl() {
 
 function currIndexInc_current() {
   currentRemoveEl();
+  if (realIdx >= PROJECTS[currentProjectNum - 1].projectImg.length - 1) {
+    realIdx = 0;
+  } else {
+    realIdx++;
+  }
   goToSlideIndex_current(currentIndex_current + 1);
   return;
 }
 
 function currIndexDec_current() {
   currentRemoveEl();
+  if (realIdx <= 0) {
+    realIdx = PROJECTS[currentProjectNum - 1].projectImg.length - 1;
+  } else {
+    realIdx--;
+  }
   goToSlideIndex_current(currentIndex_current - 1);
   return;
 }
@@ -2195,7 +2237,9 @@ function enableSlideCount() {
   pageID_3.style.pointerEvents = "auto";
 }
 
+let realIdx = 0;
 function currentInit(start) {
+  realIdx = 0;
   currentON = true;
   console.log("current Project NUM: " + currentProjectNum);
   project_outter.classList.add("hidden");
@@ -2221,6 +2265,7 @@ function currentInit(start) {
 
 function currentEnd() {
   currentON = false;
+  realIdx = 0;
   currentIndex_current = 0;
   sliderContainer_current.classList.remove("animated");
   currentRemoveEl();
@@ -2468,3 +2513,66 @@ btn_send.addEventListener("mouseout", function () {
   focus_email.removeAttribute("style");
   focus_name.removeAttribute("style");
 });
+
+/* for section contact */
+function sendEmail() {
+  $.ajax({
+    type: "POST",
+    data: {
+      name: document.getElementById("contact-name").value,
+      email: document.getElementById("contact-email").value,
+      message: document.getElementById("contact-message").value,
+    },
+    dataType: "JSON",
+    url: "https://script.google.com/macros/s/AKfycbwtZMRaMwNULhNrrertGlBkVTCGUM6ttS5HU_itkB3dAWVAaKg2BjhrmK6SR2bxVW-Q/exec",
+    success: function (data, status) {
+      swal(
+        "Thank you!",
+        "Your message has been successfully sent. I will contact you soon!",
+        "success"
+      );
+      console.log(data);
+      console.log(status);
+    },
+    error: function (data, status) {
+      swal(
+        "Sorry :(",
+        " There was a problem with sending your message.",
+        "warning"
+      );
+      console.log(data);
+      console.log(status);
+    },
+  });
+}
+
+var alert = function (msg, type, icon) {
+  swal({
+    title: "",
+    text: msg,
+    type: type,
+    icon: icon,
+    timer: 1500,
+    customClass: "sweet-size",
+    showConfirmButton: false,
+  });
+};
+
+/* for modal at section portfolio */
+let btn_modal_open = document.querySelector(".modal-open");
+let btn_modal_close = document.querySelector(".close-modal");
+let btn_modal_close_outer = document.querySelector(".jquery-modal");
+
+let modal = document.querySelector(".modal-inner");
+
+btn_modal_open.addEventListener("click", function () {
+  console.log("currentProject" + currentProjectNum);
+  console.log("realIdx", realIdx);
+  let currentImgIdx = PROJECTS[currentProjectNum - 1].projectImg[realIdx];
+  modal.innerHTML = "<img src='" + currentImgIdx + "'/>";
+  // btn_modal_close = document.querySelector(".close-modal");
+  // btn_modal_close_outer = document.querySelector(".jquery-modal");
+});
+
+// btn_modal_close.addEventListener("click", startTimer);
+// btn_modal_close_outer.addEventListener("click", startTimer);

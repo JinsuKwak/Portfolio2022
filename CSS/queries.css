@@ -340,7 +340,10 @@
     transform: translate(-50%, 300%);
   }
 
-  /* current project */
+  .space {
+    width: 34rem;
+    height: 26rem;
+  }
 
   .project {
     row-gap: 2rem;
