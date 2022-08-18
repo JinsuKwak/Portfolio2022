@@ -200,8 +200,13 @@
   }
   .section-aboutme .container {
     width: 970rem;
-    display: flex;
+    display: grid;
     justify-content: center;
+  }
+
+  .aboutme-headder {
+    justify-self: center;
+    padding-bottom: 1rem;
   }
 
   .aboutme {

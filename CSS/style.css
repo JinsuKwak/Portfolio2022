@@ -91,6 +91,11 @@
   color: #222;
 }
 
+.aboutme-headder {
+  font-size: 4rem;
+  color: #fff;
+}
+
 .aboutme-grid {
   grid-column: 1/5;
   background-color: #fcf7f8;
@@ -121,6 +126,7 @@
 .aboutme-me--contact {
   padding: 0rem 1rem;
   row-gap: 1rem;
+  height: 5rem;
 }
 
 .aboutme-me--contact-cell,

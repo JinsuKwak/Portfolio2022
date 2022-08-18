@@ -60,6 +60,15 @@ textarea {
   animation-fill-mode: forwards;
 }
 
+.bold {
+  font-weight: 600;
+  color: #00adb5;
+}
+
+.bold-b {
+  font-weight: 600;
+  color: #222222;
+}
 @keyframes fade-in {
   from {
     opacity: 0;
