@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
-    <link rel="icon" href="img/favicon.png" />
+    <link rel="icon" href="img/favicon.jpg" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -77,7 +77,7 @@
         <div class="aboutme grid-col grid--5-cols">
           <div class="aboutme-grid grid-col gird--4-cols">
             <div class="aboutme-me grid-row grid--2-rows">
-              <div class="aboutme-me--me">ME</div>
+              <div class="aboutme-me--me"></div>
               <div class="aboutme-me--contact grid-row grid--2-rows">
                 <div class="aboutme-me--contact-cell grid-col grid--2-cols">
                   <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -92,49 +92,94 @@
               </div>
             </div>
             <div class="aboutme-info grid-row grid--2-rows">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-                magni aliquid velit voluptate veniam assumenda qui tempora unde
-                nisi nemo dolor modi repellat veritatis repellendus nostrum
-                eligendi iste. Dolore, doloremque?
-              </p>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Consequuntur explicabo nisi error labore minima quae iure
-                officia natus? Corporis pariatur voluptatem soluta id. Aperiam
-                id iusto sapiente, dolor repellat magni?
-              </p>
+              <div class="aboutme-info-top grid-row grid--2-rows">
+                <p style="line-height: 2.2rem">
+                  I am a third year software engineering student at the
+                  University of Calgary. I am currently looking for a backend
+                  development position, but I also enjoy to do frontend.
+                </p>
+                <p style="line-height: 2.2rem">
+                  Need Something built or simply want to have chat? Reach out to
+                  me on social media or send me an email.
+                </p>
+              </div>
+
+              <div>
+                <p style="line-height: 2.2rem; padding-bottom: 1rem">
+                  When I am not coding my next project, I enjoy spending my time
+                  doing any of the following:
+                </p>
+                <ui>
+                  <li style="padding-bottom: 0.6rem">
+                    I am watching my favorite eSports games
+                  </li>
+                  <li style="padding-bottom: 0.6rem">
+                    I like workout in the gym
+                  </li>
+                  <li>And I like to watch Korean Dramas</li>
+                </ui>
+              </div>
             </div>
           </div>
-          <div class="aboutme-links grid-row grid--4-rows">
-            <a class="aboutme-links--github" href="#">GitHub</a>
+          <div class="aboutme-links grid-row grid--3-rows">
+            <a
+              class="aboutme-links--github link-D"
+              href="https://github.com/JinsuKwak/"
+              ><p>GitHub</p></a
+            >
             <div style="display: none"></div>
-            <ion-icon
-              class="aboutme-logo"
-              name="logo-github"
+            <a
+              class="link-M"
+              href="https://github.com/JinsuKwak/"
               style="display: none"
-            ></ion-icon>
-            <a class="aboutme-links--linkedin" href="#">LinkedIn</a>
+            >
+              <ion-icon
+                class="aboutme-logo"
+                name="logo-github"
+                style="display: none"
+              ></ion-icon>
+            </a>
+            <a
+              class="aboutme-links--linkedin link-D"
+              href="https://www.linkedin.com/in/jinsukwak/"
+              ><p>LinkedIn</p></a
+            >
             <div style="display: none"></div>
-            <ion-icon
-              class="aboutme-logo"
-              name="logo-linkedin"
+            <a
+              class="link-M"
+              href="https://www.linkedin.com/in/jinsukwak/"
               style="display: none"
-            ></ion-icon>
-            <a class="aboutme-links--resume" href="#">Resume</a>
+            >
+              <ion-icon
+                class="aboutme-logo"
+                name="logo-linkedin"
+                style="display: none"
+              ></ion-icon>
+            </a>
+            <a
+              class="aboutme-links--resume link-D"
+              href="./Jinsu_Kwak_Resume_WEB.pdf"
+              ><p>Resume</p></a
+            >
             <div style="display: none"></div>
-            <ion-icon
-              class="aboutme-logo"
-              name="document-text-outline"
+            <a
+              class="link-M"
+              href="./Jinsu_Kwak_Resume_WEB.pdf"
               style="display: none"
-            ></ion-icon>
-            <a class="aboutme-links--instagram" href="#">Instagram</a>
+            >
+              <ion-icon
+                class="aboutme-logo"
+                name="document-text-outline"
+                style="display: none"
+              ></ion-icon>
+            </a>
+            <!-- <a class="aboutme-links--instagram" href="#"><p>Instagram</p></a>
             <div style="display: none"></div>
             <ion-icon
               class="aboutme-logo"
               name="logo-instagram"
               style="display: none"
-            ></ion-icon>
+            ></ion-icon> -->
           </div>
         </div>
       </div>
@@ -170,6 +215,22 @@
               </div>
               <div class="skills-techskill-item grid-col gird--4-cols">
                 <div
+                  class="skills-techskills-item--name JavaScript grid-col grid--2-cols"
+                >
+                  <ion-icon name="ellipse"></ion-icon>
+                  <p>JavaScript</p>
+                </div>
+                <div class="skills-level grid-col gird--5-cols">
+                  <p class="skills-level-desc hidden">Decent</p>
+                  <div class="skill-level--1"></div>
+                  <div class="skill-level--2"></div>
+                  <div class="skill-level--3"></div>
+                  <div class="skill-level--4"></div>
+                  <div class="skill-level--5"></div>
+                </div>
+              </div>
+              <div class="skills-techskill-item grid-col gird--4-cols">
+                <div
                   class="skills-techskills-item--name cCpp grid-col grid--2-cols"
                 >
                   <ion-icon name="ellipse"></ion-icon>
@@ -192,7 +253,7 @@
                   <p>Python</p>
                 </div>
                 <div class="skills-level grid-col gird--5-cols">
-                  <p class="skills-level-desc hidden">Decent</p>
+                  <p class="skills-level-desc hidden">Need Refresh</p>
                   <div class="skill-level--1"></div>
                   <div class="skill-level--2"></div>
                   <div class="skill-level--3"></div>
@@ -206,22 +267,6 @@
                 >
                   <ion-icon name="ellipse"></ion-icon>
                   <p>HTML/CSS</p>
-                </div>
-                <div class="skills-level grid-col gird--5-cols">
-                  <p class="skills-level-desc hidden">Not Bad</p>
-                  <div class="skill-level--1"></div>
-                  <div class="skill-level--2"></div>
-                  <div class="skill-level--3"></div>
-                  <div class="skill-level--4"></div>
-                  <div class="skill-level--5"></div>
-                </div>
-              </div>
-              <div class="skills-techskill-item grid-col gird--4-cols">
-                <div
-                  class="skills-techskills-item--name JavaScript grid-col grid--2-cols"
-                >
-                  <ion-icon name="ellipse"></ion-icon>
-                  <p>JavaScript</p>
                 </div>
                 <div class="skills-level grid-col gird--5-cols">
                   <p class="skills-level-desc hidden">Not Bad</p>
@@ -685,8 +730,8 @@
                 <div class="project-intro grid-row grid--2-rows">
                   <div class="project-intro--img"></div>
                   <div class="project-intro--info grid-row grid--3-rows">
-                    <h3 class="project--name">Project 1-C</h3>
-                    <p class="project--date">04/07/22 ~ 04/08/22</p>
+                    <h3 class="project--name">EZMK</h3>
+                    <p class="project--date">07/20/22 ~ Present</p>
                     <div class="project--group">
                       <i class="ph-user-bold"></i>
                       <p class="project--group-numbers">Individual</p>
@@ -695,13 +740,13 @@
                 </div>
                 <div class="project-skills">
                   <div class="project-skillcontainer grid-col grid--2-cols">
-                    <div class="Skill C grid-col grid--2-cols">
+                    <div class="Skill WIP grid-col grid--2-cols">
                       <ion-icon name="ellipse"></ion-icon>
-                      <p>C</p>
+                      <p>Work in Progress</p>
                     </div>
-                    <div class="Skill Cpp grid-col grid--2-cols">
+                    <div class="Skill ReactNative grid-col grid--2-cols">
                       <ion-icon name="ellipse"></ion-icon>
-                      <p>C++</p>
+                      <p>React Native</p>
                     </div>
                     <div class="Skill JavaScript grid-col grid--2-cols">
                       <ion-icon name="ellipse"></ion-icon>
@@ -716,7 +761,7 @@
 
                   <div class="project-intro--info grid-row grid--3-rows">
                     <h3 class="project--name">Project 1-D</h3>
-                    <p class="project--date">04/07/22 ~ 04/08/22</p>
+                    <p class="project--date">01/01/22 ~ 01/08/22</p>
                     <div class="project--group">
                       <i class="ph-users-four-bold"></i>
                       <p class="project--group-numbers">Group of 4</p>
@@ -725,24 +770,24 @@
                 </div>
                 <div class="project-skills">
                   <div class="project-skillcontainer grid-col grid--2-cols">
-                    <div class="Skill Java grid-col grid--2-cols">
+                    <div class="Skill WIP grid-col grid--2-cols">
                       <ion-icon name="ellipse"></ion-icon>
-                      <p>Java</p>
+                      <p>Work in Progress</p>
                     </div>
-                    <div class="Skill CSS grid-col grid--2-cols">
+                    <!-- <div class="Skill CSS grid-col grid--2-cols">
                       <ion-icon name="ellipse"></ion-icon>
                       <p>CSS</p>
                     </div>
                     <div class="Skill Python grid-col grid--2-cols">
                       <ion-icon name="ellipse"></ion-icon>
                       <p>Python</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
             </div>
             <!-- Project Page 2 -->
-            <div class="portfolio-projects grid-col grid--4cols">
+            <!-- <div class="portfolio-projects grid-col grid--4cols">
               <div class="portfolio-project project-2-A grid-row grid--3-rows">
                 <div class="project-intro grid-row grid--2-rows">
                   <div class="project-intro--img"></div>
@@ -882,9 +927,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- Project Page 3 -->
-            <div class="portfolio-projects grid-col grid--4cols">
+            <!-- <div class="portfolio-projects grid-col grid--4cols">
               <div class="portfolio-project project-3-A grid-row grid--3-rows">
                 <div class="project-intro grid-row grid--2-rows">
                   <div class="project-intro--img">img</div>
@@ -1008,7 +1053,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="project-container hidden">
             <div class="project grid-col grid--4cols">
@@ -1057,13 +1102,13 @@
                       <div class="slide">slide A-4</div>
                       <div class="slide">slide A-5</div>
                     </div>
-                    <btn class="btn-current-next">
-                      <ion-icon name="chevron-forward"></ion-icon
-                    ></btn>
+                    <div class="btn-current-next">
+                      <ion-icon name="chevron-forward"></ion-icon>
+                    </div>
 
-                    <btn class="btn-current-prev"
-                      ><ion-icon name="chevron-back"></ion-icon
-                    ></btn>
+                    <div class="btn-current-prev">
+                      <ion-icon name="chevron-back"></ion-icon>
+                    </div>
                   </div>
                   <div id="modal" class="modal">
                     <div class="modal-inner"></div>
@@ -1097,7 +1142,7 @@
             </div>
           </div>
         </div>
-        <button class="btn-project btn-project--next">
+        <div class="btn-project btn-project--next">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="btn-project--icon"
@@ -1115,8 +1160,8 @@
               clip-rule="evenodd"
             />
           </svg>
-        </button>
-        <button class="btn-project btn-project--prev">
+        </div>
+        <div class="btn-project btn-project--prev">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="btn-project--icon"
@@ -1129,11 +1174,11 @@
               clip-rule="evenodd"
             />
           </svg>
-        </button>
+        </div>
         <div class="pageID-project">
           <button class="btn-project--pageID">&nbsp;</button>
-          <button class="btn-project--pageID">&nbsp;</button>
-          <button class="btn-project--pageID">&nbsp;</button>
+          <!-- <button class="btn-project--pageID">&nbsp;</button> -->
+          <!-- <button class="btn-project--pageID">&nbsp;</button> -->
         </div>
       </div>
     </section>

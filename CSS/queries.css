@@ -29,7 +29,7 @@
   .aboutme-links {
     row-gap: 1rem;
   }
-  .aboutme-links a {
+  .aboutme-links .link-D {
     height: fit-content;
   }
 
@@ -210,6 +210,7 @@
     width: 70rem;
   }
 
+  /* TODO */
   .aboutme-links {
     grid-column: 1/5;
     grid-row: 2/3;
@@ -217,12 +218,12 @@
     justify-content: center;
     column-gap: 2rem;
     row-gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     justify-content: center;
   }
 
-  .aboutme-links a {
+  .aboutme-links .link-D {
     font-size: 1.4rem;
     width: 15rem;
     padding: 1rem;
@@ -535,6 +536,10 @@
   .aboutme-logo {
     display: inline-block !important;
     font-size: 2rem;
+  }
+
+  .link-M {
+    display: inline-block !important;
   }
 
   /* skills */
